@@ -67,6 +67,40 @@ function Bags() {
     ]
 
     const bagPrice = 300.00;
+
+    function scrollNext(listId: string, direction: 'left' | 'right') {
+  const list = document.getElementById(listId);
+  if (!list) return;
+
+  const children = Array.from(list.children) as HTMLElement[];
+  if (!children.length) return;
+
+  // find the currently most visible item
+  const containerCenter = list.scrollLeft + list.clientWidth / 2;
+  let closestIndex = 0;
+  let closestDistance = Infinity;
+
+  children.forEach((child, i) => {
+    const childCenter = child.offsetLeft + child.clientWidth / 2;
+    const distance = Math.abs(containerCenter - childCenter);
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestIndex = i;
+    }
+  });
+
+  // move to next or previous
+  let targetIndex =
+    direction === 'right'
+      ? Math.min(children.length - 1, closestIndex + 1)
+      : Math.max(0, closestIndex - 1);
+
+  const target = children[targetIndex];
+  const scrollTo = target.offsetLeft - list.clientWidth / 2 + target.clientWidth / 2;
+
+  list.scrollTo({ left: scrollTo, behavior: 'smooth' });
+}
+
     
 
   return (
@@ -102,7 +136,7 @@ function Bags() {
                               className="h-full w-full flex-none object-contain snap-center"
                               loading="lazy"
                             />
-                          ))}
+                          ))} 
                         </div>
                       </div>
 
@@ -158,7 +192,7 @@ function Bags() {
           aria-label="Scroll left"
           className="h-34 absolute top-40 sm:top-20 left-0 z-20 rounded-full bg-white/90 hover:bg-white shadow p-2 cursor-pointer"
           onClick={() =>
-            document.getElementById('bags-list')?.scrollBy({ left: -400, behavior: 'smooth' })
+            scrollNext('bags-list', 'left')
           }
         >
           ‹
@@ -168,7 +202,7 @@ function Bags() {
           aria-label="Scroll right"
           className="h-34 absolute top-40 sm:top-20 right-0 z-20 rounded-full bg-white/90 hover:bg-white shadow p-2 cursor-pointer"
           onClick={() =>
-            document.getElementById('bags-list')?.scrollBy({ left: 400, behavior: 'smooth' })
+            scrollNext('bags-list', 'right')
           }
         >
           ›
