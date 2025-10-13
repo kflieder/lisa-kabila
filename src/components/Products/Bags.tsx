@@ -68,6 +68,8 @@ function Bags() {
 
     const bagPrice = 300.00;
 
+    
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <style>{`
@@ -109,11 +111,12 @@ function Bags() {
                         type="button"
                         aria-label="Previous image"
                         className="absolute bottom-2 left-[40%] sm:left-[24%] z-10 rounded-full sm:bg-white/80 bg-white sm:hover:bg-white shadow p-2 w-6 h-6 flex items-center justify-center cursor-pointer"
-                        onClick={() =>
-                          document
-                            .getElementById(`bag-carousel-${bag.id}`)
-                            ?.scrollBy({ left: -300, behavior: 'smooth' })
-                        }
+                        onClick={() => {
+                          const carousel = document.getElementById(`bag-carousel-${bag.id}`);
+                          if (carousel) {
+                            carousel.scrollBy({ left: -300, behavior: 'smooth' });
+                          }
+                        }}
                       >
                         ‹
                       </button>
@@ -121,11 +124,12 @@ function Bags() {
                         type="button"
                         aria-label="Next image"
                         className="absolute bottom-2 right-[40%] sm:right-[25%] z-10 rounded-full sm:bg-white/80 bg-white sm:hover:bg-white shadow p-2 w-6 h-6 flex items-center justify-center cursor-pointer"
-                        onClick={() =>
-                          document
-                            .getElementById(`bag-carousel-${bag.id}`)
-                            ?.scrollBy({ left: 300, behavior: 'smooth' })
-                        }
+                        onClick={() => {
+                          const carousel = document.getElementById(`bag-carousel-${bag.id}`);
+                          if (carousel) {
+                            carousel.scrollBy({ left: 300, behavior: 'smooth' });
+                          }
+                        }}
                       >
                         ›
                       </button>
@@ -156,9 +160,13 @@ function Bags() {
           type="button"
           aria-label="Scroll left"
           className="h-34 absolute top-40 sm:top-20 left-0 z-20 rounded-full bg-white/90 hover:bg-white shadow p-2 cursor-pointer"
-          onClick={() =>
-            document.getElementById('bags-list')?.scrollBy({ left: -400, behavior: 'smooth' })
-          }
+          onClick={() => {
+            const list = document.getElementById('bags-list');
+            if (list) {
+                const itemWidth = list.firstElementChild?.clientWidth || 0;
+                list.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            }
+          }}
         >
           ‹
         </button>
@@ -166,9 +174,13 @@ function Bags() {
           type="button"
           aria-label="Scroll right"
           className="h-34 absolute top-40 sm:top-20 right-0 z-20 rounded-full bg-white/90 hover:bg-white shadow p-2 cursor-pointer"
-          onClick={() =>
-            document.getElementById('bags-list')?.scrollBy({ left: 400, behavior: 'smooth' })
-          }
+          onClick={() => {
+            const list = document.getElementById('bags-list');
+            if (list) {
+                const itemWidth = list.firstElementChild?.clientWidth || 0;
+                list.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            }
+          }}
         >
           ›
         </button>
