@@ -7,7 +7,7 @@ function Bags() {
             id: 1,
             name: "Pink Bag",
             description: "A beautiful pink and white striped bag with braided straps.",
-            imageUrls: ['/bags/2.jpg', '/bags/1.jpg'],
+            imageUrls: ['/bags/2.JPG', '/bags/1.JPG'],
         },
         {
             id: 2,
