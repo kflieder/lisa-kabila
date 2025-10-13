@@ -58,7 +58,7 @@ function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider
                                     <img
                                         src={src}
                                         alt={`Slide ${i + 1}`}
-                                        className="block w-full sm:h-64 h -auto md:h-96 object-contain select-none"
+                                        className="block w-full sm:h-84 h-auto md:h-96 object-contain select-none"
                                         draggable={false}
                                     />
                                 </div>
@@ -69,7 +69,7 @@ function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider
                     <button
                         onClick={prev}
                         aria-label="Previous"
-                        className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur opacity-0 group-hover:opacity-100 transition cursor-pointer"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -78,7 +78,7 @@ function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider
                     <button
                         onClick={next}
                         aria-label="Next"
-                        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur opacity-0 group-hover:opacity-100 transition cursor-pointer"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
