@@ -145,9 +145,7 @@ function Bags() {
                         aria-label="Previous image"
                         className="absolute bottom-2 left-[40%] sm:left-[24%] z-10 rounded-full sm:bg-white/80 bg-white sm:hover:bg-white shadow p-2 w-6 h-6 flex items-center justify-center cursor-pointer"
                         onClick={() =>
-                          document
-                            .getElementById(`bag-carousel-${bag.id}`)
-                            ?.scrollBy({ left: -300, behavior: 'smooth' })
+                          scrollNext(`bag-carousel-${bag.id}`, 'left')
                         }
                       >
                         ‹
@@ -157,9 +155,7 @@ function Bags() {
                         aria-label="Next image"
                         className="absolute bottom-2 right-[40%] sm:right-[25%] z-10 rounded-full sm:bg-white/80 bg-white sm:hover:bg-white shadow p-2 w-6 h-6 flex items-center justify-center cursor-pointer"
                         onClick={() =>
-                          document
-                            .getElementById(`bag-carousel-${bag.id}`)
-                            ?.scrollBy({ left: 300, behavior: 'smooth' })
+                          scrollNext(`bag-carousel-${bag.id}`, 'right')
                         }
                       >
                         ›
