@@ -153,7 +153,7 @@ function Bags() {
                           );
                           if (carousel) {
                             carousel.scrollBy({
-                              left: carousel.clientWidth,
+                              left: -carousel.clientWidth,
                               behavior: "smooth",
                             });
                           }
@@ -171,7 +171,7 @@ function Bags() {
                           );
                           if (carousel) {
                             carousel.scrollBy({
-                              left: -carousel.clientWidth,
+                              left: carousel.clientWidth,
                               behavior: "smooth",
                             });
                           }
