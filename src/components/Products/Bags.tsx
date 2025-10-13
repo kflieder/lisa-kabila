@@ -13,55 +13,55 @@ function Bags() {
             id: 2,
             name: "Orange Bag",
             description: "A vibrant orange bag with a sleek design and sturdy handles.",
-            imageUrls: ['/bags/3.jpg'],
+            imageUrls: ['/bags/3.JPG'],
         },
         {
             id: 3,
             name: "Pink Bag",
             description: "A beautiful pink bag with braided straps.",
-            imageUrls: ['/bags/4.jpg'],
+            imageUrls: ['/bags/4.JPG'],
         },
         {
             id: 4,
             name: "Light Blue Bag",
             description: "A stylish light blue bag bag with braided straps.",
-            imageUrls: ['/bags/5.jpg'],
+            imageUrls: ['/bags/5.JPG'],
         },
         {
             id: 5,
             name: "Burnt Orange and White Bag",
             description: "A beautiful burnt orange and white striped bag with braided straps.",
-            imageUrls: ['/bags/6.jpg'],
+            imageUrls: ['/bags/6.JPG'],
         },
         {
             id: 6,
             name: "Light Green Bag",
             description: "A stylish light green bag with braided straps.",
-            imageUrls: ['/bags/7.jpg'],
+            imageUrls: ['/bags/7.JPG'],
         },
         {
             id: 7,
             name: "Pink Bag",
             description: "A lovely pink bag with braided straps.",
-            imageUrls: ['/bags/8.jpg', '/bags/11.jpg'],
+            imageUrls: ['/bags/8.JPG', '/bags/11.JPG'],
         },
         {
             id: 8,
             name: "Black and White Striped Bag",
             description: "A chic black and white striped bag with braided straps.",
-            imageUrls: ['/bags/9.jpg'],
+            imageUrls: ['/bags/9.JPG'],
         },
         {
             id: 9,
             name: "Light Blue Bag",
             description: "A stylish light blue bag with braided straps.",
-            imageUrls: ['/bags/10.jpg'],
+            imageUrls: ['/bags/10.JPG'],
         },
         {
             id: 10,
             name: "Black and White Striped Bag",
             description: "A stylish black and white striped bag with braided straps.",
-            imageUrls: ['/bags/12.jpg'],
+            imageUrls: ['/bags/12.JPG'],
         }
 
     ]
@@ -70,7 +70,6 @@ function Bags() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
-        <h1 className="text-3xl font-semibold text-gray-900 mb-6">Bags</h1>
       <style>{`
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
