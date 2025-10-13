@@ -85,7 +85,7 @@ function Bags() {
           className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth gap-6 pb-4"
         >
           {bags.map((bag) => (
-            <li key={bag.id} className="snap-start flex-none w-full md:w-1/3 lg:w-1/5">
+            <li key={bag.id} className="snap-center flex-none w-full md:w-1/3 lg:w-1/5">
               <div className="bg-white rounded-xl shadow ring-1 ring-gray-100 hover:shadow-md transition-shadow h-full flex flex-col justify-between">
                 <div className="aspect-[4/5] w-full overflow-hidden rounded-t-xl bg-gray-100">
                   {bag.imageUrls.length > 1 ? (
@@ -100,7 +100,7 @@ function Bags() {
                               key={idx}
                               src={url}
                               alt={`${bag.name} ${idx + 1}`}
-                              className="h-full w-full flex-none object-contain snap-start"
+                              className="h-full w-full flex-none object-contain snap-center"
                               loading="lazy"
                             />
                           ))}
