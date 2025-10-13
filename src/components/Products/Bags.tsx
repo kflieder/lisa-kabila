@@ -70,6 +70,7 @@ function Bags() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+        <h1 className="text-3xl font-semibold text-gray-900 mb-6">Bags</h1>
       <style>{`
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
