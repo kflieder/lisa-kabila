@@ -1,15 +1,15 @@
 import Header from "@/components/Header";
-import HomeBottomText from "@/components/HomePage/HomeBottomText";
-import HomeTextBox from "@/components/HomePage/HomeTextBox";
-import ImageSlider from "@/components/HomePage/ImageSlider";
-import MissionStoryText from "@/components/HomePage/MissionStoryText";
-import SocialLinks from "@/components/HomePage/SocialLinks";
+import HomeBottomText from "@/components/Home/HomeBottomText";
+import HomeTextBox from "@/components/Home/HomeTextBox";
+import ImageSlider from "@/components/Home/ImageSlider";
+import MissionStoryText from "@/components/Home/MissionStoryText";
+import SocialLinks from "@/components/Home/SocialLinks";
 
 
 function HomePage({setActiveTabFromImageSliderFromHomePage}: {setActiveTabFromImageSliderFromHomePage: (tab: 'home' | 'products') => void}) {
   return (
-      <div className="h-screen flex flex-col justify-between items-center w-full max-w-full mx-auto space-y-20 pt-5 sm:pt-15">
-        <div className="flex sm:flex-row flex-col items-center gap-20 sm:gap-10 sm:px-10 w-full">
+      <div className="h-screen flex flex-col justify-between items-center w-full mx-auto space-y-20 pt-5 sm:pt-15">
+        <div className="flex sm:flex-row flex-col items-center gap-20 sm:gap-10 sm:px-10 w-full justify-center items-center">
           <HomeTextBox />
           <ImageSlider setActiveTabFromImageSlider={setActiveTabFromImageSliderFromHomePage} />
         </div>
