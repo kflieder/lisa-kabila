@@ -27,14 +27,14 @@ function SmallBags() {
       id: 4,
       name: "Red and White Pattern Change Purse",
       description: "A stylish red and white patterned change purse.",
-      imageUrls: ["/SmallBags/4.JPG"],
+      imageUrls: ["/SmallBags/5.JPG"],
     },
     {
       id: 5,
       name: "Dark Yellow with White Pattern Change Purse",
       description:
         "A beautiful dark yellow change purse with a white pattern.",
-      imageUrls: ["/SmallBags/5.JPG"],
+      imageUrls: ["/SmallBags/6.JPG"],
     },
   ];
 
