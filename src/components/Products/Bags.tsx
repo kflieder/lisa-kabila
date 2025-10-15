@@ -2,73 +2,84 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 function Bags() {
+  const bagPrice = 300.0;
   const bags = [
     {
-      id: 1,
+      id: "bag1",
       name: "Pink Bag",
       description:
         "A beautiful pink and white striped bag with braided straps.",
       imageUrls: ["/Bags/2.JPG", "/Bags/1.JPG"],
+      price: bagPrice,
     },
     {
-      id: 2,
+      id: "bag2",
       name: "Orange Bag",
       description:
         "A vibrant orange bag with a sleek design and sturdy handles.",
       imageUrls: ["/Bags/3.JPG"],
+      price: bagPrice,
     },
     {
-      id: 3,
+      id: "bag3",
       name: "Pink Bag",
       description: "A beautiful pink bag with braided straps.",
       imageUrls: ["/Bags/4.JPG"],
+      price: bagPrice,
     },
     {
-      id: 4,
+      id: "bag4",
       name: "Light Blue Bag",
       description: "A stylish light blue bag bag with braided straps.",
       imageUrls: ["/Bags/5.JPG"],
+      price: bagPrice,
     },
     {
-      id: 5,
+      id: "bag5",
       name: "Burnt Orange and White Bag",
       description:
         "A beautiful burnt orange and white striped bag with braided straps.",
       imageUrls: ["/Bags/6.JPG"],
+      price: bagPrice,
     },
     {
-      id: 6,
+      id: "bag6",
       name: "Light Green Bag",
       description: "A stylish light green bag with braided straps.",
       imageUrls: ["/Bags/7.JPG"],
+      price: bagPrice,
     },
     {
-      id: 7,
+      id: "bag7",
       name: "Pink Bag",
       description: "A lovely pink bag with braided straps.",
       imageUrls: ["/Bags/8.JPG", "/Bags/11.JPG"],
+      price: bagPrice,
     },
     {
-      id: 8,
+      id: "bag8",
       name: "Black and White Striped Bag",
       description: "A chic black and white striped bag with braided straps.",
       imageUrls: ["/Bags/9.JPG"],
+      price: bagPrice,
     },
     {
-      id: 9,
+      id: "bag9",
       name: "Light Blue Bag",
       description: "A stylish light blue bag with braided straps.",
       imageUrls: ["/Bags/10.JPG"],
+      price: bagPrice,  
     },
     {
-      id: 10,
+      id: "bag10",
       name: "Black and White Striped Bag",
       description: "A stylish black and white striped bag with braided straps.",
       imageUrls: ["/Bags/12.JPG"],
+      price: bagPrice,
     },
   ];
 
-  const bagPrice = 300.0;
+  
 
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
@@ -119,7 +130,7 @@ function Bags() {
           className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth gap-6 pb-4"
         >
           {bags.map((bag) => (
-            <ProductCard key={bag.id} product={bag} price={bagPrice} />
+            <ProductCard key={bag.id} product={bag} />
           ))}
         </ul>
 

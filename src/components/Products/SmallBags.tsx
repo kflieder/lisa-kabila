@@ -2,43 +2,50 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 function SmallBags() {
+
+  const smallBagPrice = 250.0;
   const smallBags = [
     {
-      id: 1,
+      id: "smallbag1",
       name: "Multicolor Change Purse",
       description:
         "A beautiful multicolor change purse.",
       imageUrls: ["/SmallBags/1.JPG"],
+      price: smallBagPrice,
     },
     {
-      id: 2,
+      id: "smallbag2",
       name: "Dark Blue with Multicolor Pattern Change Purse",
       description:
         "A vibrant dark blue change purse with a multicolor pattern.",
       imageUrls: ["/SmallBags/2.JPG"],
+      price: smallBagPrice,
     },
     {
-      id: 3,
+      id: "smallbag3",
       name: "Dark Blue with Pink Pattern Change Purse",
       description: "A beautiful dark blue change purse with a pink pattern.",
       imageUrls: ["/SmallBags/3.JPG", "/SmallBags/4.JPG"],
+      price: smallBagPrice,
     },
     {
-      id: 4,
+      id: "smallbag4",
       name: "Red and White Pattern Change Purse",
       description: "A stylish red and white patterned change purse.",
       imageUrls: ["/SmallBags/5.JPG"],
+      price: smallBagPrice,
     },
     {
-      id: 5,
+      id: "smallbag5",
       name: "Dark Yellow with White Pattern Change Purse",
       description:
         "A beautiful dark yellow change purse with a white pattern.",
       imageUrls: ["/SmallBags/6.JPG"],
+      price: smallBagPrice,
     },
   ];
 
-  const smallBagPrice = 250.0;
+  
 
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
@@ -89,7 +96,7 @@ function SmallBags() {
           className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth gap-6 pb-4"
         >
           {smallBags.map((smallBag) => (
-            <ProductCard key={smallBag.id} product={smallBag} price={smallBagPrice} />
+            <ProductCard key={smallBag.id} product={smallBag} />
           ))}
         </ul>
 

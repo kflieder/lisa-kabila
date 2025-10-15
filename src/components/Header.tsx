@@ -1,9 +1,24 @@
 'use client';
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import Cart from './Pages/Cart';
 
 function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome: 'home' | 'products', setActiveTabFromHeader: (tab: 'home' | 'products') => void}) {
     const [showCart, setShowCart] = useState(false);
+    const cartRef = useRef<HTMLDivElement>(null);
+    const cartIconRef = useRef<HTMLParagraphElement>(null);
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (cartRef.current && !cartRef.current.contains(event.target as Node) && cartIconRef.current && !cartIconRef.current.contains(event.target as Node)) {
+                setShowCart(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [showCart]);
     
 
 
@@ -32,7 +47,7 @@ function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome:
 
                 <nav className="flex items-center gap-8">
                     <p
-                        className={`pb-1 font-medium transition-colors ${
+                        className={`pb-1 font-medium transition-colors cursor-pointer ${
                             activeTabFromHome === 'home'
                                 ? 'text-amber-900 border-b-2 border-amber-600'
                                 : 'text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400'
@@ -42,7 +57,7 @@ function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome:
                         Home
                     </p>
                     <p
-                        className={`pb-1 font-medium transition-colors ${
+                        className={`pb-1 font-medium transition-colors cursor-pointer ${
                             activeTabFromHome === 'products'
                                 ? 'text-amber-900 border-b-2 border-amber-600'
                                 : 'text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400'
@@ -52,7 +67,8 @@ function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome:
                         Products
                     </p>
                     <p
-                        className={`pb-1 font-medium transition-colors inline-flex items-center gap-2 ${
+                        ref={cartIconRef}
+                        className={`pb-1 font-medium transition-colors inline-flex items-center gap-2 cursor-pointer ${
                             showCart 
                                 ? 'text-amber-900 border-b-2 border-amber-600'
                                 : 'text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400'
@@ -79,7 +95,8 @@ function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome:
             </div>
         </div>
     </header>
-    {showCart && <Cart />}
+    
+    {showCart && <div ref={cartRef}><Cart /></div> }
     </>
   )
 }

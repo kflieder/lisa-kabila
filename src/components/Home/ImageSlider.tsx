@@ -41,7 +41,7 @@ function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider
 
             return (
                 <div
-                    className="relative group w-full sm:w-114 max-w-4xl mx-auto bg-white/70 rounded-2xl border border-slate-200/60 shadow-lg backdrop-blur-md"
+                    className="relative z-1 group w-full sm:w-114 max-w-4xl mx-auto bg-white/70 rounded-2xl border border-slate-200/60 shadow-lg backdrop-blur-md"
                     onMouseEnter={clear}
                     onMouseLeave={() => {
                         clear();

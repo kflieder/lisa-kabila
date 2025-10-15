@@ -2,30 +2,34 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 function Pillows() {
+  const pillowPrice = 250.0;
   const pillows = [
     {
-      id: 1,
+      id: "pillow1",
       name: "Small White Pillow with Tribal Symbols",
       description:
         "A beautiful small white pillow with tribal symbols.",
       imageUrls: ["/Pillows/1.JPG"],
+      price: pillowPrice,
     },
     {
-      id: 2,
+      id: "pillow2",
       name: "Light Blue Pillow with a Branch Design",
       description:
         "A vibrant light blue pillow with a branch design.",
       imageUrls: ["/Pillows/2.JPG"],
+      price: pillowPrice,
     },
     {
-      id: 3,
+      id: "pillow3",
       name: "Orange and Blue pillow with geometric patterns",
       description: "A beautiful orange and blue pillow with geometric patterns.",
       imageUrls: ["/Pillows/3.JPG"],
+      price: pillowPrice,
     },
   ];
 
-  const pillowPrice = 250.0;
+  
 
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
@@ -76,7 +80,7 @@ function Pillows() {
           className="flex overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth gap-6 pb-4"
         >
           {pillows.map((pillow) => (
-            <ProductCard key={pillow.id} product={pillow} price={pillowPrice} />
+            <ProductCard key={pillow.id} product={pillow} />
           ))}
         </ul>
 
