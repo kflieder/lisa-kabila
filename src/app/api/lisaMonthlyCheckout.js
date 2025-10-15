@@ -80,7 +80,7 @@ app.post(
     }
     let subscription;
     let status;
-    // Handle the event
+    
     switch (event.type) {
       case 'customer.subscription.trial_will_end':
         subscription = event.data.object;
