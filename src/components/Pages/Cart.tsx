@@ -77,6 +77,7 @@ function Cart() {
               </p>
             </div>
           </div>
+          <a href='/Checkout'>CheckOut</a>
         </div>
       )}
     </>
