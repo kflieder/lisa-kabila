@@ -1,0 +1,27 @@
+/* App.css */
+.product {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.description {
+  margin-left: 1rem;
+}
+
+#checkout-and-portal-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #6772e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#checkout-and-portal-button:hover {
+  background: #5469d4;
+}
