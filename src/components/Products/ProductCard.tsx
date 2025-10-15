@@ -24,7 +24,7 @@ function ProductCard({
         styleSelector === "cart" ? "flex items-end border-b border-gray-300 pb-3" : "flex-none w-full md:w-1/3 lg:w-1/5"
       }`}
     >
-      <div className={`bg-white rounded-xl shadow ring-1 ring-gray-100 hover:shadow-md transition-shadow h-full flex flex-col justify-between ${styleSelector === "cart" ? "sm:w-1/2 w-full" : ""}`}>
+      <div className={`bg-white rounded-xl shadow ring-1 ring-gray-100 hover:shadow-md transition-shadow h-full flex flex-col justify-between ${styleSelector === "cart" ? "w-1/2" : ""}`}>
         <div className="aspect-[4/5] w-full overflow-hidden rounded-t-xl bg-gray-100">
           {product.imageUrls.length > 1 ? (
             <div className="relative h-full w-full">
