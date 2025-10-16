@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY_LIVE!, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY_TEST!, {
   apiVersion: undefined,
 });
 
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
       phone_number_collection: {
         enabled: true,
       },
-      success_url: `${baseUrl}/?success=true`,
+      success_url: `${baseUrl}/success/?success=true`,
       cancel_url: `${baseUrl}/?canceled=true`,
     });
 
