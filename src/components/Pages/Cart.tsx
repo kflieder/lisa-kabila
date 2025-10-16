@@ -98,7 +98,12 @@ function Cart() {
               </p>
             </div>
           </div>
-          <button onClick={handleCheckout}>CheckOut</button>
+          <button
+            onClick={handleCheckout}
+            className="sm:w-1/2 w-[90%] mb-4 inline-flex items-center justify-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 active:scale-[.98] transition cursor-pointer"
+          >
+            CheckOut
+          </button>
         </div>
       )}
     </>
