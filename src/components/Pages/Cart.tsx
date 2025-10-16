@@ -2,6 +2,9 @@ import React from "react";
 import ProductCard from "../Products/ProductCard";
 import { useCart } from "../../context/CartContext";
 import { loadStripe } from "@stripe/stripe-js";
+import app, { db } from "@/firebase.config";
+
+import { getDoc, doc, collection } from "firebase/firestore";
 
 function Cart() {
   const { cart } = useCart();
@@ -9,24 +12,40 @@ function Cart() {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   const totalWithShipping = totalPrice + 10000;
 
-
   async function handleCheckout() {
-    const response = await fetch('/api/create-checkout-session', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ cart }),
-    })
-    const data = await response.json()
-    if (data.url) {
-      window.location.href = data.url
-    } else {
-      console.error('Checkout session error:', data.error);
+    try {
+      const cartWithDbPrices = [];
+      for (const item of cart) {
+        const productRef = doc(db, "products", item.id);
+        const productSnap = await getDoc(productRef);
+        const dbPrice = productSnap.data()?.price;
+        cartWithDbPrices.push({ ...item, price: dbPrice });
+      }
+
+      const shippingPricesRef = doc(db, 'settings', 'shipping');
+      const shippingSnapshot = await getDoc(shippingPricesRef);
+      const shippingFee = shippingSnapshot.data()?.standard || 10000;
+      
+
+
+
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ cart: cartWithDbPrices, shippingFee }),
+      });
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        console.error("Checkout session error:", data.error);
+      }
+    } catch (error) {
+      console.error("Error creating checkout session:", error);
     }
   }
-
-
 
   return (
     <>
