@@ -107,7 +107,7 @@ function ProductCard({
           <p className="mt-1 text-sm text-gray-600">{product.description}</p>
           <div className="flex justify-between">
             <p className="mt-2 text-sm font-semibold text-gray-900">
-              Price: ${product.price.toFixed(2)}
+              Price: <br /> <span className="text-gray-600">${product.price / 100} MXN</span>
             </p>
             <div className="border flex flex-col items-end justify-center rounded-md border-gray-200 px-2 py-1">
             {
@@ -143,7 +143,7 @@ function ProductCard({
           <div className="flex items-center justify-between border-t border-gray-200 pt-2">
               <dt className="text-sm text-gray-600 mr-2">Price</dt>
               <dd className="text-sm font-medium text-gray-900 text-right">
-                ${product.price.toFixed(2)}
+                ${product.price / 100} MXN
               </dd>
               
             </div>

@@ -1,12 +1,33 @@
 import React from "react";
 import ProductCard from "../Products/ProductCard";
 import { useCart } from "../../context/CartContext";
+import { loadStripe } from "@stripe/stripe-js";
 
 function Cart() {
   const { cart } = useCart();
 
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-  const totalWithShipping = totalPrice + 5.99;
+  const totalWithShipping = totalPrice + 10000;
+
+
+  async function handleCheckout() {
+    const response = await fetch('/api/create-checkout-session', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ cart }),
+    })
+    const data = await response.json()
+    if (data.url) {
+      window.location.href = data.url
+    } else {
+      console.error('Checkout session error:', data.error);
+    }
+  }
+
+
+
   return (
     <>
       {cart.length === 0 ? (
@@ -57,16 +78,16 @@ function Cart() {
           <div className="w-full p-4">
             <div className="flex justify-between">
               <span className="font-medium">Total:</span>
-              <span className="font-medium">${totalPrice.toFixed(2)}</span>
+              <span className="font-medium">${totalPrice / 100} MXN</span>
             </div>
             <div className="flex justify-between">
               <span className="font-medium">Shipping:</span>
-              <span className="font-medium">$5.99</span>
+              <span className="font-medium">${10000 / 100} MXN</span>
             </div>
             <div className="flex justify-between border-t border-gray-200 pt-2">
               <span className="font-medium">Grand Total:</span>
               <span className="font-medium">
-                ${totalWithShipping.toFixed(2)}
+                ${(totalWithShipping / 100).toFixed(2)} MXN
               </span>
             </div>
             <div className="text-sm italic border border-gray-400 bg-gray-100 rounded p-1">
@@ -77,7 +98,7 @@ function Cart() {
               </p>
             </div>
           </div>
-          <a href='/Checkout'>CheckOut</a>
+          <button onClick={handleCheckout}>CheckOut</button>
         </div>
       )}
     </>

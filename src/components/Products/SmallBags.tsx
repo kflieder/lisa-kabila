@@ -1,52 +1,10 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import smallBags from "./ProductsData/smallBags.json";
 
 function SmallBags() {
 
-  const smallBagPrice = 250.0;
-  const smallBags = [
-    {
-      id: "smallbag1",
-      name: "Multicolor Change Purse",
-      description:
-        "A beautiful multicolor change purse.",
-      imageUrls: ["/SmallBags/1.JPG"],
-      price: smallBagPrice,
-    },
-    {
-      id: "smallbag2",
-      name: "Dark Blue with Multicolor Pattern Change Purse",
-      description:
-        "A vibrant dark blue change purse with a multicolor pattern.",
-      imageUrls: ["/SmallBags/2.JPG"],
-      price: smallBagPrice,
-    },
-    {
-      id: "smallbag3",
-      name: "Dark Blue with Pink Pattern Change Purse",
-      description: "A beautiful dark blue change purse with a pink pattern.",
-      imageUrls: ["/SmallBags/3.JPG", "/SmallBags/4.JPG"],
-      price: smallBagPrice,
-    },
-    {
-      id: "smallbag4",
-      name: "Red and White Pattern Change Purse",
-      description: "A stylish red and white patterned change purse.",
-      imageUrls: ["/SmallBags/5.JPG"],
-      price: smallBagPrice,
-    },
-    {
-      id: "smallbag5",
-      name: "Dark Yellow with White Pattern Change Purse",
-      description:
-        "A beautiful dark yellow change purse with a white pattern.",
-      imageUrls: ["/SmallBags/6.JPG"],
-      price: smallBagPrice,
-    },
-  ];
-
   
-
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
     if (!list) return;

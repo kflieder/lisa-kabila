@@ -2,6 +2,7 @@
 import React, {useState, useRef, useEffect} from 'react'
 import Cart from './Pages/Cart';
 
+
 function Header({setActiveTabFromHeader, activeTabFromHome}: {activeTabFromHome: 'home' | 'products', setActiveTabFromHeader: (tab: 'home' | 'products') => void}) {
     const [showCart, setShowCart] = useState(false);
     const cartRef = useRef<HTMLDivElement>(null);
