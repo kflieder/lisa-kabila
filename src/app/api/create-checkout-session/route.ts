@@ -28,7 +28,8 @@ export async function POST(req: NextRequest) {
       },
     ];
 
-    const baseUrl = "https://lisa-kabila.vercel.app";
+    const baseUrlCancel = "https://lisa-kabila.vercel.app";
+    const baseUrlSuccess = "https://lisa-kabila.vercel.app/success";
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -40,8 +41,8 @@ export async function POST(req: NextRequest) {
       phone_number_collection: {
         enabled: true,
       },
-      success_url: `${baseUrl}/success/?success=true`,
-      cancel_url: `${baseUrl}/?canceled=true`,
+      success_url: `${baseUrlSuccess}/?success=true`,
+      cancel_url: `${baseUrlCancel}/?canceled=true`,
     });
 
     return NextResponse.json({ url: session.url });
