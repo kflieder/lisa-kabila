@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
       price_data: {
         currency: 'mxn',
         product_data: { name: item.name },
-        unit_amount: item.price * 100, // in cents
+        unit_amount: item.price, // in cents
       },
       quantity: 1,
     })),
