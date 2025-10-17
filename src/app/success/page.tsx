@@ -1,3 +1,4 @@
+'use client'
 import SuccessPage from '@/components/Pages/Success'
 import React from 'react'
 
