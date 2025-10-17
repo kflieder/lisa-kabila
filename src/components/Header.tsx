@@ -56,7 +56,7 @@ useEffect(() => {
                 alt="Logo"
               />
             </a>
-            <nav className="flex items-center gap-6">
+            <nav className="flex items-center gap-3 md:gap-6">
               <p
                 className={`pb-1 font-medium transition-colors cursor-pointer ${
                   activeTabFromHome === "home"
