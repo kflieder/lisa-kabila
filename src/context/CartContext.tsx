@@ -80,6 +80,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
         snapshot.forEach((doc) => {
           const data = doc.data();
+
           if (data.reservedAt && now - data.reservedAt < 30 * 60 * 1000) {
             validReservedIds.push(doc.id);
           } else {
