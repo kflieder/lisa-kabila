@@ -1,75 +1,102 @@
 [
-    {
-      "id": "bag1",
-      "name": "Pink Bag",
-      "description":
-        "A beautiful pink and white striped bag with braided straps.",
-      "imageUrls": ["/Bags/2.JPG", "/Bags/1.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag2",
-      "name": "Orange Bag",
-      "description":
-        "A vibrant orange bag with a sleek design and sturdy handles.",
-      "imageUrls": ["/Bags/3.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag3",
-      "name": "Pink Bag",
-      "description": "A beautiful pink bag with braided straps.",
-      "imageUrls": ["/Bags/4.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag4",
-      "name": "Light Blue Bag",
-      "description": "A stylish light blue bag with braided straps.",
-      "imageUrls": ["/Bags/5.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag5",
-      "name": "Burnt Orange and White Bag",
-      "description":
-        "A beautiful burnt orange and white striped bag with braided straps.",
-      "imageUrls": ["/Bags/6.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag6",
-      "name": "Light Green Bag",
-      "description": "A stylish light green bag with braided straps.",
-      "imageUrls": ["/Bags/7.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag7",
-      "name": "Pink Bag",
-      "description": "A lovely pink bag with braided straps.",
-      "imageUrls": ["/Bags/8.JPG", "/Bags/11.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag8",
-      "name": "Black and White Striped Bag",
-      "description": "A chic black and white striped bag with braided straps.",
-      "imageUrls": ["/Bags/9.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag9",
-      "name": "Light Blue Bag",
-      "description": "A stylish light blue bag with braided straps.",
-      "imageUrls": ["/Bags/10.JPG"],
-      "price": 30000
-    },
-    {
-      "id": "bag10",
-      "name": "Black and White Striped Bag",
-      "description": "A stylish black and white striped bag with braided straps.",
-      "imageUrls": ["/Bags/12.JPG"],
-      "price": 30000
-    }
-  ]
+  {
+    "id": "bag1",
+    "name": "Bolso Rosa",
+    "name_en": "Pink Bag",
+    "description": "Un hermoso bolso rosa y blanco a rayas con asas trenzadas.",
+    "description_en": "A beautiful pink and white striped bag with braided straps.",
+    "imageUrls": ["/Bags/2.JPG", "/Bags/1.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag2",
+    "name": "Bolso Naranja",
+    "name_en": "Orange Bag",
+    "description": "Un vibrante bolso naranja con un diseño elegante y asas resistentes.",
+    "description_en": "A vibrant orange bag with a sleek design and sturdy handles.",
+    "imageUrls": ["/Bags/3.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag3",
+    "name": "Bolso Rosa",
+    "name_en": "Pink Bag",
+    "description": "Un hermoso bolso rosa con asas trenzadas.",
+    "description_en": "A beautiful pink bag with braided straps.",
+    "imageUrls": ["/Bags/4.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag4",
+    "name": "Bolso Azul Claro",
+    "name_en": "Light Blue Bag",
+    "description": "Un elegante bolso azul claro con asas trenzadas.",
+    "description_en": "A stylish light blue bag with braided straps.",
+    "imageUrls": ["/Bags/5.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag5",
+    "name": "Bolso Naranja",
+    "name_en": "Burnt Orange and White Bag",
+    "description": "Un hermoso bolso naranja quemado y blanco a rayas con asas trenzadas.",
+    "description_en": "A beautiful burnt orange and white striped bag with braided straps.",
+    "imageUrls": ["/Bags/6.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag6",
+    "name": "Bolso Verde Claro",
+    "name_en": "Light Green Bag",
+    "description": "Un elegante bolso verde claro con asas trenzadas.",
+    "description_en": "A stylish light green bag with braided straps.",
+    "imageUrls": ["/Bags/7.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag7",
+    "name": "Bolso Rosa",
+    "name_en": "Pink Bag",
+    "description": "Un encantador bolso rosa con asas trenzadas.",
+    "description_en": "A lovely pink bag with braided straps.",
+    "imageUrls": ["/Bags/8.JPG", "/Bags/11.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag8",
+    "name": "Bolso Negro",
+    "name_en": "Black and White Striped Bag",
+    "description": "Un elegante bolso a rayas negro y blanco con asas trenzadas.",
+    "description_en": "A chic black and white striped bag with braided straps.",
+    "imageUrls": ["/Bags/9.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag9",
+    "name": "Bolso Azul Claro",
+    "name_en": "Light Blue Bag",
+    "description": "Un elegante bolso azul claro con asas trenzadas.",
+    "description_en": "A stylish light blue bag with braided straps.",
+    "imageUrls": ["/Bags/10.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "bag10",
+    "name": "Bolso Negro",
+    "name_en": "Black and White Striped Bag",
+    "description": "Un elegante bolso a rayas negro y blanco con asas trenzadas.",
+    "description_en": "A stylish black and white striped bag with braided straps.",
+    "imageUrls": ["/Bags/12.JPG"],
+    "price": 30000,
+    "purchased": false
+  }
+]

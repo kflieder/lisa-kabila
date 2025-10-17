@@ -1,11 +1,11 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import bags from "./ProductsData/bags.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 function Bags() {
+  const { lang, t } = useLanguage();
 
-
-  
 
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
@@ -77,6 +77,9 @@ function Bags() {
           ›
         </button>
       </div>
+      <p className="mt-4 text-sm text-gray-500 italic">
+        {t("productDisclaimer", lang)}
+      </p>
     </div>
   );
 }

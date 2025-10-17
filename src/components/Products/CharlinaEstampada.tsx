@@ -1,9 +1,10 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import charlinaEstampadas from "./ProductsData/charlinaEstampada.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 function CharlinaEstampada() {
-  
+  const { lang, t } = useLanguage();
   
   const charlinas = charlinaEstampadas;
   
@@ -78,6 +79,9 @@ function CharlinaEstampada() {
           ›
         </button>
       </div>
+      <p className="mt-4 text-sm text-gray-500 italic">
+        {t("productDisclaimer", lang)}
+      </p>
     </div>
   );
 }

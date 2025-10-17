@@ -1,128 +1,182 @@
 [
-    {
-      "id": "scarf1",
-      "name": "White Scarf",
-      "description": "A beautiful white scarf",
-      "imageUrls": ["/CharlinaEstampada/1.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf2",
-      "name": "Light Blue Scarf with brown pattern",
-      "description": "A vibrant light blue scarf with a brown pattern.",
-      "imageUrls": ["/CharlinaEstampada/2.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf3",
-      "name": "Brown Scarf",
-      "description": "A beautiful brown scarf.",
-      "imageUrls": ["/CharlinaEstampada/3.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf4",
-      "name": "Purple Scarf",
-      "description": "A stylish purple scarf.",
-      "imageUrls": ["/CharlinaEstampada/4.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf5",
-      "name": "Vibrant Yellow Scarf",
-      "description": "A beautiful vibrant yellow scarf.",
-      "imageUrls": ["/CharlinaEstampada/5.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf6",
-      "name": "Purple Scarf",
-      "description": "A stylish purple scarf.",
-      "imageUrls": ["/CharlinaEstampada/6.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf7",
-      "name": "White Scarf with brown pattern",
-      "description": "A lovely white scarf with brown patterns.",
-      "imageUrls": ["/CharlinaEstampada/7.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf8",
-      "name": "Blue Scarf with light brown pattern",
-      "description": "A chic blue scarf with light brown patterns.",
-      "imageUrls": ["/CharlinaEstampada/8.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf9",
-      "name": "Black Scarf",
-      "description": "A stylish black scarf.",
-      "imageUrls": ["/CharlinaEstampada/9.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf10",
-      "name": "Blue Scarf with light brown pattern",
-      "description": "A stylish blue scarf with light brown patterns.",
-      "imageUrls": ["/CharlinaEstampada/10.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf11",
-      "name": "Brown Scarf",
-      "description": "A stylish brown scarf.",
-      "imageUrls": ["/CharlinaEstampada/11.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf12",
-      "name": "Gray Scarf with light brown pattern",
-      "description": "A stylish gray scarf with light brown patterns.",
-      "imageUrls": ["/CharlinaEstampada/12.JPG", "/CharlinaEstampada/13.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf13",
-      "name": "Beautiful beige scarf",
-      "description": "A stylish beige scarf.",
-      "imageUrls": ["/CharlinaEstampada/14.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf14",
-      "name": "Vibrant Pink Scarf",
-      "description": "A stylish vibrant pink scarf.",
-      "imageUrls": ["/CharlinaEstampada/15.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf15",
-      "name": "Vibrant Blue Scarf",
-      "description": "A stylish vibrant blue scarf.",
-      "imageUrls": ["/CharlinaEstampada/16.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf16",
-      "name": "Vibrant Green Scarf",
-      "description": "A stylish vibrant green scarf.",
-      "imageUrls": ["/CharlinaEstampada/17.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf17",
-      "name": "Light Brown Scarf",
-      "description": "A stylish light brown scarf with intricate patterns.",
-      "imageUrls": ["/CharlinaEstampada/18.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "scarf18",
-      "name": "Blue scarf with light brown pattern",
-      "description": "A stylish blue scarf with light brown patterns.",
-      "imageUrls": ["/CharlinaEstampada/19.JPG"],
-      "price": 25000
-    }
-  ]
+  {
+    "id": "scarf1",
+    "name": "Bufanda Blanca",
+    "name_en": "White Scarf",
+    "description": "Una hermosa bufanda blanca.",
+    "description_en": "A beautiful white scarf",
+    "imageUrls": ["/CharlinaEstampada/1.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf2",
+    "name": "Bufanda Azul",
+    "name_en": "Light Blue Scarf with brown pattern",
+    "description": "Una vibrante bufanda azul claro con un patrón marrón.",
+    "description_en": "A vibrant light blue scarf with a brown pattern.",
+    "imageUrls": ["/CharlinaEstampada/2.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf3",
+    "name": "Bufanda Marrón",
+    "name_en": "Brown Scarf",
+    "description": "Una hermosa bufanda marrón.",
+    "description_en": "A beautiful brown scarf.",
+    "imageUrls": ["/CharlinaEstampada/3.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf4",
+    "name": "Bufanda Morada",
+    "name_en": "Purple Scarf",
+    "description": "Una elegante bufanda morada.",
+    "description_en": "A stylish purple scarf.",
+    "imageUrls": ["/CharlinaEstampada/4.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf5",
+    "name": "Bufanda Amarilla",
+    "name_en": "Yellow Scarf",
+    "description": "Una hermosa bufanda amarilla vibrante.",
+    "description_en": "A beautiful vibrant yellow scarf.",
+    "imageUrls": ["/CharlinaEstampada/5.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf6",
+    "name": "Bufanda Morada",
+    "name_en": "Purple Scarf",
+    "description": "Una elegante bufanda morada.",
+    "description_en": "A stylish purple scarf.",
+    "imageUrls": ["/CharlinaEstampada/6.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf7",
+    "name": "Bufanda Blanca",
+    "name_en": "White Scarf",
+    "description": "Una encantadora bufanda blanca con patrones marrones.",
+    "description_en": "A lovely white scarf with brown patterns.",
+    "imageUrls": ["/CharlinaEstampada/7.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf8",
+    "name": "Bufanda Azul",
+    "name_en": "Blue Scarf",
+    "description": "Una elegante bufanda azul con patrones marrón claro.",
+    "description_en": "A chic blue scarf with light brown patterns.",
+    "imageUrls": ["/CharlinaEstampada/8.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf9",
+    "name": "Bufanda Negra",
+    "name_en": "Black Scarf",
+    "description": "Una elegante bufanda negra.",
+    "description_en": "A stylish black scarf.",
+    "imageUrls": ["/CharlinaEstampada/9.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf10",
+    "name": "Bufanda Azul",
+    "name_en": "Blue Scarf",
+    "description": "Una elegante bufanda azul con patrones marrón claro.",
+    "description_en": "A stylish blue scarf with light brown patterns.",
+    "imageUrls": ["/CharlinaEstampada/10.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf11",
+    "name": "Bufanda Marrón",
+    "name_en": "Brown Scarf",
+    "description": "Una elegante bufanda marrón.",
+    "description_en": "A stylish brown scarf.",
+    "imageUrls": ["/CharlinaEstampada/11.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf12",
+    "name": "Bufanda Gris",
+    "name_en": "Gray Scarf",
+    "description": "Una elegante bufanda gris con patrones marrón claro.",
+    "description_en": "A stylish gray scarf with light brown patterns.",
+    "imageUrls": ["/CharlinaEstampada/12.JPG", "/CharlinaEstampada/13.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf13",
+    "name": "Bufanda Beige",
+    "name_en": "Beige Scarf",
+    "description": "Una elegante bufanda beige.",
+    "description_en": "A stylish beige scarf.",
+    "imageUrls": ["/CharlinaEstampada/14.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf14",
+    "name": "Bufanda Rosa",
+    "name_en": "Pink Scarf",
+    "description": "Una elegante bufanda rosa vibrante.",
+    "description_en": "A stylish vibrant pink scarf.",
+    "imageUrls": ["/CharlinaEstampada/15.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf15",
+    "name": "Bufanda Azul",
+    "name_en": "Blue Scarf",
+    "description": "Una elegante bufanda azul vibrante.",
+    "description_en": "A stylish vibrant blue scarf.",
+    "imageUrls": ["/CharlinaEstampada/16.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf16",
+    "name": "Bufanda Verde",
+    "name_en": "Green Scarf",
+    "description": "Una elegante bufanda verde.",
+    "description_en": "A stylish green scarf.",
+    "imageUrls": ["/CharlinaEstampada/17.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf17",
+    "name": "Bufanda Marrón",
+    "name_en": "Brown Scarf",
+    "description": "Una elegante bufanda marrón claro con patrones intrincados.",
+    "description_en": "A stylish light brown scarf with intricate patterns.",
+    "imageUrls": ["/CharlinaEstampada/18.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "scarf18",
+    "name": "Bufanda Azul",
+    "name_en": "Blue Scarf",
+    "description": "Una elegante bufanda azul con patrones marrón claro.",
+    "description_en": "A stylish blue scarf with light brown patterns.",
+    "imageUrls": ["/CharlinaEstampada/19.JPG"],
+    "price": 25000,
+    "purchased": false
+  }
+]

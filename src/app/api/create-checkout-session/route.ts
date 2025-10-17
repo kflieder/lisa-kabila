@@ -29,7 +29,8 @@ export async function POST(req: NextRequest) {
     ];
 
     const baseUrlCancel = "https://lisa-kabila.vercel.app";
-    const baseUrlSuccess = "https://lisa-kabila.vercel.app/success";
+    // const baseUrlSuccess = "https://lisa-kabila.vercel.app/success";
+    const baseUrlSuccess = "http://localhost:3000/success";
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],

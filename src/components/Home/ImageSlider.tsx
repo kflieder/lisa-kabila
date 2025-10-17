@@ -1,7 +1,9 @@
 'use client';
 import React from 'react'
+import { useLanguage } from '@/context/LanguageContext';
 
 function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider?: (tab: 'home' | 'products') => void}) {
+    const { lang, t } = useLanguage();
   return (
     <div className='relative order-1 sm:order-1'>
     {(() => {
@@ -105,12 +107,12 @@ function ImageSlider({setActiveTabFromImageSlider}: {setActiveTabFromImageSlider
 
         return <Slider />;
     })()}
-     <div className="absolute bottom-1 translate-x-[-50%] left-1/2 flex justify-center gap-2 w-30">
+     <div className="absolute z-49 bottom-1 translate-x-[-50%] left-1/2 flex justify-center gap-2 w-30">
                         <p
                             onClick={() => setActiveTabFromImageSlider?.('products')}
                             className="cursor-pointer inline-flex items-center gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm font-medium text-amber-700 hover:bg-amber-100 hover:border-amber-300 transition"
                         >   
-                            View Products
+                            {t('viewProducts', lang)}
                         </p>
                     </div>
     </div>

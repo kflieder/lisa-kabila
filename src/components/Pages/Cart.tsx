@@ -3,11 +3,13 @@ import ProductCard from "../Products/ProductCard";
 import { useCart } from "../../context/CartContext";
 import { loadStripe } from "@stripe/stripe-js";
 import app, { db } from "@/firebase.config";
+import { useLanguage } from "@/context/LanguageContext";
 
 import { getDoc, doc, collection } from "firebase/firestore";
 
 function Cart() {
   const { cart } = useCart();
+  const { lang, t } = useLanguage();
 
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   const totalWithShipping = totalPrice + 10000;
@@ -70,10 +72,10 @@ function Cart() {
             </div>
 
             <h2 className="text-lg font-semibold text-gray-800">
-              Your cart is empty
+              {t("your_cart_is_empty", lang)}
             </h2>
             <p className="text-sm text-gray-500">
-              Discover unique, one-of-a-kind pieces and add your favorites.
+              {t("cart_discover", lang)}
             </p>
 
             {/* <div className="mt-2 flex items-center gap-2" onClick={}>
@@ -83,7 +85,7 @@ function Cart() {
             </div> */}
 
             <p className="text-xs text-gray-400">
-              Items are reserved for 30 minutes once added.
+              {t("cart_reservation_note", lang)}
             </p>
           </div>
         </div>
@@ -100,20 +102,18 @@ function Cart() {
               <span className="font-medium">${totalPrice / 100} MXN</span>
             </div>
             <div className="flex justify-between">
-              <span className="font-medium">Shipping:</span>
+              <span className="font-medium">{t("shipping", lang)}:</span>
               <span className="font-medium">${10000 / 100} MXN</span>
             </div>
             <div className="flex justify-between border-t border-gray-200 pt-2">
-              <span className="font-medium">Grand Total:</span>
+              <span className="font-medium">{t("grand_total", lang)}:</span>
               <span className="font-medium">
                 ${(totalWithShipping / 100).toFixed(2)} MXN
               </span>
             </div>
             <div className="text-sm italic border border-gray-400 bg-gray-100 rounded p-1">
               <p>
-                Because each item is one-of-a-kind, items are reserved in your
-                cart for 30 minutes. If you’ve been browsing longer, give your
-                cart a refresh before checking out.
+                {t("cart_reservation_disclaimer", lang)}
               </p>
             </div>
           </div>
@@ -121,7 +121,7 @@ function Cart() {
             onClick={handleCheckout}
             className="sm:w-1/2 w-[90%] mb-4 inline-flex items-center justify-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 active:scale-[.98] transition cursor-pointer"
           >
-            CheckOut
+            {t("checkout", lang)}
           </button>
         </div>
       )}

@@ -1,39 +1,52 @@
 [
-    {
-      "id": "smallbag1",
-      "name": "Multicolor Change Purse",
-      "description":
-        "A beautiful multicolor change purse.",
-      "imageUrls": ["/SmallBags/1.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "smallbag2",
-      "name": "Dark Blue with Multicolor Pattern Change Purse",
-      "description":
-        "A vibrant dark blue change purse with a multicolor pattern.",
-      "imageUrls": ["/SmallBags/2.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "smallbag3",
-      "name": "Dark Blue with Pink Pattern Change Purse",
-      "description": "A beautiful dark blue change purse with a pink pattern.",
-      "imageUrls": ["/SmallBags/3.JPG", "/SmallBags/4.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "smallbag4",
-      "name": "Red and White Pattern Change Purse",
-      "description": "A stylish red and white patterned change purse.",
-      "imageUrls": ["/SmallBags/5.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "smallbag5",
-      "name": "Dark Yellow with White Pattern Change Purse",
-      "description": "A beautiful dark yellow change purse with a white pattern.",
-      "imageUrls": ["/SmallBags/6.JPG"],
-      "price": 25000
-    }
-  ]
+  {
+    "id": "smallbag1",
+    "name": "Monedero Multicolor",
+    "name_en": "Multicolor Change Purse",
+    "description": "Un hermoso monedero multicolor.",
+    "description_en": "A beautiful multicolor change purse.",
+    "imageUrls": ["/SmallBags/1.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag2",
+    "name": "Monedero Azul Oscuro con Patrón Multicolor",
+    "name_en": "Dark Blue with Multicolor Pattern Change Purse",
+    "description": "Un vibrante monedero azul oscuro con un patrón multicolor.",
+    "description_en": "A vibrant dark blue change purse with a multicolor pattern.",
+    "imageUrls": ["/SmallBags/2.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag3",
+    "name": "Monedero Azul Oscuro",
+    "name_en": "Dark Blue with Pink Pattern Change Purse",
+    "description": "Un hermoso monedero azul oscuro con un patrón rosa.",
+    "description_en": "A beautiful dark blue change purse with a pink pattern.",
+    "imageUrls": ["/SmallBags/3.JPG", "/SmallBags/4.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag4",
+    "name": "Monedero con Patrón Rojo y Blanco",
+    "name_en": "Red and White Pattern Change Purse",
+    "description": "Un estilizado monedero con patrón rojo y blanco.",
+    "description_en": "A stylish red and white patterned change purse.",
+    "imageUrls": ["/SmallBags/5.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag5",
+    "name": "Monedero Amarillo Oscuro con Patrón Blanco",
+    "name_en": "Dark Yellow with White Pattern Change Purse",
+    "description": "Un hermoso monedero amarillo oscuro con un patrón blanco.",
+    "description_en": "A beautiful dark yellow change purse with a white pattern.",
+    "imageUrls": ["/SmallBags/6.JPG"],
+    "price": 25000,
+    "purchased": false
+  }
+]

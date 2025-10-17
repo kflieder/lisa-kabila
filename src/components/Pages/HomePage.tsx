@@ -9,7 +9,7 @@ import SocialLinks from "@/components/Home/SocialLinks";
 function HomePage({setActiveTabFromImageSliderFromHomePage}: {setActiveTabFromImageSliderFromHomePage: (tab: 'home' | 'products') => void}) {
   return (
       <div className="h-screen flex flex-col justify-between items-center w-full mx-auto space-y-20 pt-5 sm:pt-15">
-        <div className="flex sm:flex-row flex-col items-center gap-20 sm:gap-10 sm:px-10 w-full justify-center items-center">
+        <div className="flex sm:flex-row flex-col items-center gap-20 sm:gap-10 sm:px-10 w-full justify-center">
           <HomeTextBox />
           <ImageSlider setActiveTabFromImageSlider={setActiveTabFromImageSliderFromHomePage} />
         </div>

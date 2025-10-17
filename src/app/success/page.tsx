@@ -1,14 +1,33 @@
-import type { Metadata } from "next";
+'use client';
+import React, { useEffect } from "react";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
+import { useSearchParams } from "next/navigation";
 
 // src/app/success/page.tsx
 
-export const metadata: Metadata = {
-  title: "Payment Success",
-  description: "Thank you for your purchase",
-};
+
 
 export default function SuccessPage() {
+  const { cart, clearCart, markAsPurchased } = useCart();
+  const searchParams = useSearchParams();
+  const success = searchParams.get("success");
+  const [processed, setProcessed] = React.useState(false);
+
+  useEffect(() => {
+    console.log("searchParams:", searchParams.toString());
+    console.log("success param:", success);
+  
+    if (success === "true" && cart.length > 0 && !processed) {
+      cart.forEach((product) => markAsPurchased(product.id));
+      clearCart();
+      setProcessed(true);
+    }
+  }, [success, cart, processed, markAsPurchased, clearCart]);
+
+
+
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 flex items-center justify-center px-6 py-16">
       <div className="relative w-full max-w-xl text-center">

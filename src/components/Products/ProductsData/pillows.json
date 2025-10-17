@@ -1,25 +1,32 @@
 [
-    {
-      "id": "pillow1",
-      "name": "Small White Pillow with Tribal Symbols",
-      "description":
-        "A beautiful small white pillow with tribal symbols.",
-      "imageUrls": ["/Pillows/1.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "pillow2",
-      "name": "Light Blue Pillow with a Branch Design",
-      "description":
-        "A vibrant light blue pillow with a branch design.",
-      "imageUrls": ["/Pillows/2.JPG"],
-      "price": 25000
-    },
-    {
-      "id": "pillow3",
-      "name": "Orange and Blue pillow with geometric patterns",
-      "description": "A beautiful orange and blue pillow with geometric patterns.",
-      "imageUrls": ["/Pillows/3.JPG"],
-      "price": 25000
-    }
-  ]
+  {
+    "id": "pillow1",
+    "name": "Pequeña Almohada Blanca con Símbolos Tribales",
+    "name_en": "Small White Pillow with Tribal Symbols",
+    "description": "Una hermosa pequeña almohada blanca con símbolos tribales.",
+    "description_en": "A beautiful small white pillow with tribal symbols.",
+    "imageUrls": ["/Pillows/1.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "pillow2",
+    "name": "Almohada Azul Claro con Diseño de Rama",
+    "name_en": "Light Blue Pillow with a Branch Design",
+    "description": "Una vibrante almohada azul claro con un diseño de rama.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Pillows/2.JPG"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "pillow3",
+    "name": "Almohada Naranja y Azul con Patrones Geométricos",
+    "name_en": "Orange and Blue Pillow with Geometric Patterns",
+    "description": "Una hermosa almohada naranja y azul con patrones geométricos.",
+    "description_en": "A beautiful orange and blue pillow with geometric patterns.",
+    "imageUrls": ["/Pillows/3.JPG"],
+    "price": 25000,
+    "purchased": false
+  }
+]

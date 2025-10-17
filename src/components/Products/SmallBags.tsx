@@ -1,10 +1,11 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import smallBags from "./ProductsData/smallBags.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 function SmallBags() {
+  const { lang, t } = useLanguage();
 
-  
   function scrollNext(listId: string, direction: "left" | "right") {
     const list = document.getElementById(listId);
     if (!list) return;
@@ -75,6 +76,9 @@ function SmallBags() {
           ›
         </button>
       </div>
+      <p className="mt-4 text-sm text-gray-500 italic">
+        {t("productDisclaimer", lang)}
+      </p>
     </div>
   );
 }

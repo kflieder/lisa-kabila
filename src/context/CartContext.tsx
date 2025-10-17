@@ -21,6 +21,9 @@ type CartContextType = {
   addToCart: (product: Product) => void;
   reservedProducts: string[];
   removeFromCart: (productId: string) => void;
+  clearCart: () => void;
+  markAsPurchased: (productId: string) => void;
+  purchasedProducts: string[];
 };
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -28,6 +31,43 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
   const [reservedProducts, setReservedProducts] = useState<string[]>([]);
+  const [purchasedProducts, setPurchasedProducts] = useState<string[]>([]);
+
+  function clearCart() {
+    setCart([]);
+  }
+
+  async function markAsPurchased(productId: string) {
+    try {
+      const productRef = doc(db, "products", productId);
+      await setDoc(productRef, { purchased: true }, { merge: true });
+
+
+      setPurchasedProducts((prev) => [...prev, productId]);
+    } catch (error) {
+      console.error("Error marking product as purchased: ", error);
+    }
+  }
+
+  useEffect(() => {
+    async function fetchPurchasedProducts() {
+      try {
+        const productsRef = collection(db, "products");
+        const snapshot = await getDocs(productsRef);
+        const purchasedIds: string[] = [];
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          if (data.purchased) {
+            purchasedIds.push(doc.id);
+          }
+        });
+        setPurchasedProducts(purchasedIds);
+      } catch (error) {
+        console.error("Error fetching purchased products: ", error);
+      }
+    }
+    fetchPurchasedProducts();
+  }, []);
 
   useEffect(() => {
     async function fetchReservedProducts() {
@@ -183,7 +223,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, reservedProducts, removeFromCart }}
+      value={{ cart, addToCart, reservedProducts, removeFromCart, clearCart, markAsPurchased, purchasedProducts }}
     >
       {children}
     </CartContext.Provider>

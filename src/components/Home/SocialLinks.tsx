@@ -1,11 +1,14 @@
 import React from 'react'
+import { useLanguage } from '@/context/LanguageContext'
 
 function SocialLinks() {
+  const { t, lang } = useLanguage();
+
   return (
     <div className="rounded-xl border border-gray-200 bg-white pt-2 p-4 shadow-sm w-76 flex justify-around items-center flex-col">
-        
-            <h2 className="text-lg mb-1 font-semibold text-gray-900">Connect with us</h2>
-        
+
+            <h2 className="text-lg mb-1 font-semibold text-gray-900">{t("connectWithUs", lang)}</h2>
+
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
            
 
