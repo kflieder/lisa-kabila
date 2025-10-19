@@ -46,7 +46,7 @@ useEffect(() => {
 
   return (
     <>
-      <header className="w-full bg-amber-200 py-2 shadow-sm">
+      <header className="w-full bg-amber-200 py-1 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <a href="/" className="flex items-center gap-3">
@@ -56,7 +56,8 @@ useEffect(() => {
                 alt="Logo"
               />
             </a>
-            <nav className="flex items-center gap-3 md:gap-6">
+            <nav className='h-full flex items-end flex-col justify-start gap-2'>
+              <div className="flex items-center gap-3 md:gap-6 order-2">
               <p
                 className={`pb-1 font-medium transition-colors cursor-pointer ${
                   activeTabFromHome === "home"
@@ -105,9 +106,10 @@ useEffect(() => {
                 <span className="sr-only">Cart</span>
                 
               </p>
+              </div>
               <button
                   onClick={toggleLanguage}
-                  className="px-2 py-1 border border-stone-700 rounded-md text-sm font-medium text-stone-700 hover:bg-stone-700 hover:text-white transition h-1/2 cursor-pointer"
+                  className="px-2 border border-stone-700 rounded-md text-xs font-medium text-stone-700 hover:bg-stone-700 hover:text-white transition cursor-pointer"
                 >
                   {lang === "en" ? "Español" : "English"}
                 </button>
