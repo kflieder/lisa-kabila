@@ -46,12 +46,12 @@ useEffect(() => {
 
   return (
     <>
-      <header className="w-full bg-amber-200 py-1 shadow-sm">
+      <header className="w-full py-1 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between">
+          <div className="flex h-42 items-center justify-between">
             <a href="/" className="flex items-center gap-3">
               <img
-                className="h-20 w-20 rounded-full"
+                className="h-36 w-36 rounded-full"
                 src="/logo.jpg"
                 alt="Logo"
               />
