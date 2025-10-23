@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Header activeTabFromHome={activeTab} setActiveTabFromHeader={setActiveTab} />
-      <>
+      <div className="pt-42">
       {
         activeTab === 'home' && (
           <HomePage setActiveTabFromImageSliderFromHomePage={setActiveTab} />
@@ -24,7 +24,7 @@ export default function Home() {
           <ProductsPage />
         )
       }
-      </>
+      </div>
      </>
     
   );

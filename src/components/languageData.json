@@ -52,5 +52,22 @@
   "checkout": "Pagar",
   "checkout_en": "Checkout",
   "productDisclaimer_en": "An item can only be reserved for 30 minutes. If you see an item you like that is currently reserved, feel free to refresh periodically to see if it has been released or purchased.",
-  "productDisclaimer": "Un artículo solo puede reservarse por 30 minutos. Si ves un artículo que te gusta y está reservado, siéntete libre de actualizar la página periódicamente para ver si ha sido liberado o comprado."
+  "productDisclaimer": "Un artículo solo puede reservarse por 30 minutos. Si ves un artículo que te gusta y está reservado, siéntete libre de actualizar la página periódicamente para ver si ha sido liberado o comprado.",
+
+
+  
+  "bags": "Bolsas",
+  "bags_en": "Bags",
+  "small_bags": "Bolsas pequeños",
+  "small_bags_en": "Small Bags",
+  "coin_purses": "Monederos",
+  "coin_purses_en": "Coin Purses",
+  "scarves": "Chalinas",
+  "scarves_en": "Scarves",
+  "jewelry": "Joyería",
+  "jewelry_en": "Jewelry",
+  "pillows": "Cojines",
+  "pillows_en": "Pillows",
+  "dresses": "Vestidos",
+  "dresses_en": "Dresses"
 }
