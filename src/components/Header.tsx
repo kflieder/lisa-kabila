@@ -12,8 +12,12 @@ function Header({
   setActiveTabFromHeader: (tab: "home" | "products") => void;
 }) {
   const [showCart, setShowCart] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
   const cartRef = useRef<HTMLDivElement>(null);
   const cartIconRef = useRef<HTMLParagraphElement>(null);
+  const headerRef = useRef<HTMLDivElement | null>(null);
+  const categoriesRef = useRef<HTMLDivElement | null>(null);
+  const placeholderRef = useRef<HTMLDivElement | null>(null);
   const { lang, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
@@ -34,6 +38,50 @@ function Header({
     };
   }, [showCart]);
 
+  // Scroll handler to toggle fixed categories
+  useEffect(() => {
+    const onScroll = () => {
+      if (!categoriesRef.current) return;
+
+      // Where the categories are relative to viewport
+      const catRect = categoriesRef.current.getBoundingClientRect();
+
+      // We want categories to fix to top of viewport when its top <= 0
+      // (you can adjust threshold here if you want it a few px earlier)
+      const shouldFix = catRect.top <= 0;
+
+      if (shouldFix !== isFixed) {
+        setIsFixed(shouldFix);
+      }
+
+      // update placeholder height to avoid layout jump
+      if (placeholderRef.current && categoriesRef.current) {
+        placeholderRef.current.style.height = `${categoriesRef.current.offsetHeight}px`;
+      }
+    };
+
+    // throttle using requestAnimationFrame pattern
+    let ticking = false;
+    const rafHandler = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          onScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    // initial run
+    onScroll();
+    window.addEventListener("scroll", rafHandler, { passive: true });
+    window.addEventListener("resize", rafHandler);
+    return () => {
+      window.removeEventListener("scroll", rafHandler);
+      window.removeEventListener("resize", rafHandler);
+    };
+  }, [isFixed]);
+
   function handleTabClick(tab: "home" | "products") {
     setActiveTabFromHeader(tab);
   }
@@ -44,7 +92,10 @@ function Header({
 
   return (
     <>
-      <header className="fixed w-full py-1 shadow-sm px-2 flex items-start justify-between gap-8 bg-white top-0 z-50">
+      <div
+        ref={headerRef}
+        className="w-full py-1 shadow-sm px-2 flex items-start justify-between gap-8 bg-white"
+      >
         <a
           href="/"
           className="flex items-center gap-3 border border-gray-300 rounded-full shrink-0"
@@ -57,7 +108,7 @@ function Header({
         </a>
 
         <div className="flex flex-col w-full gap-10">
-          <nav className=" flex items-end flex-col justify-start gap-2">
+          <nav className="flex items-end flex-col justify-start gap-2">
             <div className="flex items-center gap-3 md:gap-6 order-2">
               <p
                 className={`font-medium transition-colors cursor-pointer ${
@@ -114,11 +165,61 @@ function Header({
               </p>
             </div>
           </nav>
-          <Categories />
-        </div>
-      </header>
 
-      {showCart && (
+          {/* original categories in header */}
+          <div ref={categoriesRef} className="w-full">
+            <Categories />
+          </div>
+        </div>
+      </div>
+
+   
+
+      {/* fixed clone when stuck */}
+      {isFixed && (
+        <div
+          className="fixed flex justify-around left-0 right-0 top-0 z-50 bg-white shadow-sm p-4"
+          // optional: add border-b or subtle shadow so it reads as separated
+        >
+          <div className="max-w-[100%] mx-auto">
+            <Categories />
+          </div>
+          <p
+            ref={cartIconRef}
+            className={`relative pb-1 font-medium transition-colors inline-flex items-center gap-2 cursor-pointer ${
+              showCart
+                ? "text-amber-900 border-b-2 border-amber-600"
+                : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
+            }`}
+            onClick={() => {
+              handleCartClick();
+            }}
+          >
+            <svg
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="9" cy="20" r="1" />
+              <circle cx="17" cy="20" r="1" />
+              <path d="M3 4h2l2.4 10.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6L21 8H7" />
+            </svg>
+            <span className="sr-only">Cart</span>
+          </p>
+          {showCart && (
+            <div className='' ref={cartRef}>
+              <Cart />
+            </div>
+          )}
+        </div>
+      )}
+
+      {showCart && !isFixed && (
         <div ref={cartRef}>
           <Cart />
         </div>

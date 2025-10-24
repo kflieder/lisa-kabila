@@ -54,8 +54,6 @@
   "productDisclaimer_en": "An item can only be reserved for 30 minutes. If you see an item you like that is currently reserved, feel free to refresh periodically to see if it has been released or purchased.",
   "productDisclaimer": "Un artículo solo puede reservarse por 30 minutos. Si ves un artículo que te gusta y está reservado, siéntete libre de actualizar la página periódicamente para ver si ha sido liberado o comprado.",
 
-
-  
   "bags": "Bolsas",
   "bags_en": "Bags",
   "small_bags": "Bolsas pequeños",
@@ -69,5 +67,16 @@
   "pillows": "Cojines",
   "pillows_en": "Pillows",
   "dresses": "Vestidos",
-  "dresses_en": "Dresses"
+  "dresses_en": "Dresses",
+
+  "sliderPhrase1": "100% Hecho a Mano",
+  "sliderPhrase1_en": "100% Handmade",
+  "sliderPhrase2": "Creado por talentosas mujeres de América Latina y África",
+  "sliderPhrase2_en": "Crafted by talented women from Latin America & Africa",
+  "sliderPhrase3": "Empoderando a artesanos, inspirando comunidades",
+  "sliderPhrase3_en": "Empowering artisans, inspiring communities",
+  "sliderPhrase4": "Piezas únicas que cuentan una historia",
+  "sliderPhrase4_en": "Unique pieces that tell a story",
+  "sliderPhrase5": "Belleza, cultura y arte en una sola pieza",
+  "sliderPhrase5_en": "Beauty, culture, craft - all in one piece"
 }

@@ -15,7 +15,7 @@ function Categories() {
     ];
 
   return (
-    <div>
+    <>
         <ul className='flex items-center justify-start gap-6 overflow-x-auto flex-wrap'>
             {Categories.map((category) => (
                 <li key={category.id} className='whitespace-nowrap cursor-pointer text-stone-700 hover:text-amber-800 font-medium'>
@@ -23,7 +23,7 @@ function Categories() {
                 </li>
             ))}
         </ul>
-    </div>
+    </>
   )
 }
 
