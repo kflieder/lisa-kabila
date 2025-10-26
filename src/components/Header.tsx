@@ -315,7 +315,7 @@ function Header({
       )}
       {
         isFixed && (
-          <div className="h-10"></div>
+          <div className="h-10 sm:hidden block"></div>
         )
       }
 
