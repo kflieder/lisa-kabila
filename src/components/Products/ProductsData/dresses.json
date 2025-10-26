@@ -95,7 +95,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro con detalles en blanco y gris.",
     "description_en": "A stylish black dress with white and gray patterns.",
-    "imageUrls": ["/Dresses/12.jpg", "/Dresses/13.jpg","/Dresses/28.jpg"],
+    "imageUrls": ["/Dresses/12.jpg", "/Dresses/13.jpg", "/Dresses/24.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -105,7 +105,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro con detalles coloridos.",
     "description_en": "A stylish black dress with colorful patterns.",
-    "imageUrls": ["/Dresses/14.jpg"],
+    "imageUrls": ["/Dresses/14.jpg","/Dresses/28.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -169,28 +169,19 @@
     "price": 30000,
     "purchased": false
   },
+ 
   {
     "id": "dress18",
-    "name": "Vestido Negro",
-    "name_en": "Black Dress",
-    "description": "Un elegante vestido negro.",
-    "description_en": "A stylish black dress.",
-    "imageUrls": ["/Dresses/24.jpg"],
+    "name": "Vestido Azul",
+    "name_en": "Blue Dress",
+    "description": "Un elegante vestido azul.",
+    "description_en": "A stylish blue dress.",
+    "imageUrls": ["/Dresses/36.jpg", "/Dresses/32.jpg", "/Dresses/22.jpg"],
     "price": 30000,
     "purchased": false
   },
   {
     "id": "dress19",
-    "name": "Vestido Azul",
-    "name_en": "Blue Dress",
-    "description": "Un elegante vestido azul.",
-    "description_en": "A stylish blue dress.",
-    "imageUrls": ["/Dresses/36.jpg", "/Dresses/32.jpg"],
-    "price": 30000,
-    "purchased": false
-  },
-  {
-    "id": "dress20",
     "name": "Vestido Blanco",
     "name_en": "White Dress",
     "description": "Un elegante vestido blanco.",
