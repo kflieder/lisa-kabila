@@ -5,7 +5,7 @@
     "name_en": "Purple Dress",
     "description": "Un hermoso vestido morado con patrones geométricos.",
     "description_en": "A beautiful purple dress with geometric patterns.",
-    "imageUrls": ["/Dresses/1.JPG", "/Dresses/29.jpg"],
+    "imageUrls": ["/Dresses/1.jpg", "/Dresses/29.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -15,7 +15,7 @@
     "name_en": "Pink Dress",
     "description": "Un vibrante vestido rosa con un diseño elegante.",
     "description_en": "A vibrant pink dress with a sleek design.",
-    "imageUrls": ["/Dresses/2.JPG"],
+    "imageUrls": ["/Dresses/2.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -25,7 +25,7 @@
     "name_en": "White Dress",
     "description": "Un hermoso vestido blanco con detalles florales.",
     "description_en": "A beautiful white dress with floral details.",
-    "imageUrls": ["/Dresses/3.JPG"],
+    "imageUrls": ["/Dresses/3.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -35,7 +35,7 @@
     "name_en": "Light Blue Dress",
     "description": "Un elegante vestido azul claro con detalles florales.",
     "description_en": "A stylish light blue dress with floral details.",
-    "imageUrls": ["/Dresses/4.JPG", "/Dresses/31.jpg"],
+    "imageUrls": ["/Dresses/4.jpg", "/Dresses/31.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -45,7 +45,7 @@
     "name_en": "White Dress",
     "description": "Un hermoso vestido blanco con patrones geométricos.",
     "description_en": "A beautiful white dress with geometric patterns.",
-    "imageUrls": ["/Dresses/5.JPG", "/Dresses/6.JPG"],
+    "imageUrls": ["/Dresses/5.jpg", "/Dresses/6.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -55,7 +55,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro con patron colorido.",
     "description_en": "A stylish black dress with colorful pattern.",
-    "imageUrls": ["/Dresses/7.JPG"],
+    "imageUrls": ["/Dresses/7.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -65,7 +65,7 @@
     "name_en": "Pink Dress",
     "description": "Un encantador vestido rosa.",
     "description_en": "A lovely pink dress.",
-    "imageUrls": ["/Dresses/8.JPG"],
+    "imageUrls": ["/Dresses/8.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -75,7 +75,7 @@
     "name_en": "Pink Dress",
     "description": "Un encantador vestido rosa.",
     "description_en": "A lovely pink dress.",
-    "imageUrls": ["/Dresses/9.JPG", "/Dresses/33.jpg", "/Dresses/25.jpg"],
+    "imageUrls": ["/Dresses/9.jpg", "/Dresses/33.jpg", "/Dresses/25.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -85,7 +85,7 @@
     "name_en": "Brown Dress",
     "description": "Un elegante vestido marrón con detalles sutiles.",
     "description_en": "A stylish brown dress with subtle details.",
-    "imageUrls": ["/Dresses/10.JPG", "/Dresses/11.JPG","/Dresses/26.jpg"],
+    "imageUrls": ["/Dresses/10.jpg", "/Dresses/11.jpg","/Dresses/26.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -95,7 +95,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro con detalles en blanco y gris.",
     "description_en": "A stylish black dress with white and gray patterns.",
-    "imageUrls": ["/Dresses/12.JPG", "/Dresses/13.JPG","/Dresses/28.jpg"],
+    "imageUrls": ["/Dresses/12.jpg", "/Dresses/13.jpg","/Dresses/28.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -105,7 +105,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro con detalles coloridos.",
     "description_en": "A stylish black dress with colorful patterns.",
-    "imageUrls": ["/Dresses/14.JPG"],
+    "imageUrls": ["/Dresses/14.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -115,7 +115,7 @@
     "name_en": "Pink Dress",
     "description": "Un elegante vestido rosa.",
     "description_en": "A stylish pink dress.",
-    "imageUrls": ["/Dresses/15.JPG"],
+    "imageUrls": ["/Dresses/15.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -125,7 +125,7 @@
     "name_en": "Pink Dress",
     "description": "Un elegante vestido rosa.",
     "description_en": "A stylish pink dress.",
-    "imageUrls": ["/Dresses/16.JPG", "/Dresses/27.JPG"],
+    "imageUrls": ["/Dresses/16.jpg", "/Dresses/27.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -135,7 +135,7 @@
     "name_en": "Pink Dress",
     "description": "Un elegante vestido rosa.",
     "description_en": "A stylish pink dress.",
-    "imageUrls": ["/Dresses/17.JPG"],
+    "imageUrls": ["/Dresses/17.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -145,7 +145,7 @@
     "name_en": "Purple Dress",
     "description": "Un elegante vestido morado.",
     "description_en": "A stylish purple dress.",
-    "imageUrls": ["/Dresses/18.JPG"],
+    "imageUrls": ["/Dresses/18.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -155,7 +155,7 @@
     "name_en": "Purple Dress",
     "description": "Un elegante vestido morado.",
     "description_en": "A stylish purple dress.",
-    "imageUrls": ["/Dresses/21.JPG", "/Dresses/19.JPG"],
+    "imageUrls": ["/Dresses/21.jpg", "/Dresses/19.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -165,7 +165,7 @@
     "name_en": "Purple Dress",
     "description": "Un elegante vestido morado.",
     "description_en": "A stylish purple dress.",
-    "imageUrls": ["/Dresses/23.JPG"],
+    "imageUrls": ["/Dresses/23.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -175,7 +175,7 @@
     "name_en": "Black Dress",
     "description": "Un elegante vestido negro.",
     "description_en": "A stylish black dress.",
-    "imageUrls": ["/Dresses/24.JPG"],
+    "imageUrls": ["/Dresses/24.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -185,7 +185,7 @@
     "name_en": "Blue Dress",
     "description": "Un elegante vestido azul.",
     "description_en": "A stylish blue dress.",
-    "imageUrls": ["/Dresses/36.JPG", "/Dresses/32.jpg"],
+    "imageUrls": ["/Dresses/36.jpg", "/Dresses/32.jpg"],
     "price": 30000,
     "purchased": false
   },
@@ -195,7 +195,7 @@
     "name_en": "White Dress",
     "description": "Un elegante vestido blanco.",
     "description_en": "A stylish white dress.",
-    "imageUrls": ["/Dresses/35.JPG"],
+    "imageUrls": ["/Dresses/35.jpg"],
     "price": 30000,
     "purchased": false
   }
