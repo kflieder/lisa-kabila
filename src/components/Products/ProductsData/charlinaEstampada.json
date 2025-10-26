@@ -96,7 +96,7 @@
     "description": "Una elegante bufanda azul con patrones marrón claro.",
     "description_en": "A stylish blue scarf with light brown patterns.",
     "imageUrls": ["/CharlinaEstampada/10.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -106,7 +106,7 @@
     "description": "Una elegante bufanda marrón.",
     "description_en": "A stylish brown scarf.",
     "imageUrls": ["/CharlinaEstampada/11.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -116,7 +116,7 @@
     "description": "Una elegante bufanda gris con patrones marrón claro.",
     "description_en": "A stylish gray scarf with light brown patterns.",
     "imageUrls": ["/CharlinaEstampada/12.JPG", "/CharlinaEstampada/13.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -126,7 +126,7 @@
     "description": "Una elegante bufanda beige.",
     "description_en": "A stylish beige scarf.",
     "imageUrls": ["/CharlinaEstampada/14.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -136,7 +136,7 @@
     "description": "Una elegante bufanda rosa vibrante.",
     "description_en": "A stylish vibrant pink scarf.",
     "imageUrls": ["/CharlinaEstampada/15.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -146,7 +146,7 @@
     "description": "Una elegante bufanda azul vibrante.",
     "description_en": "A stylish vibrant blue scarf.",
     "imageUrls": ["/CharlinaEstampada/16.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -156,7 +156,7 @@
     "description": "Una elegante bufanda verde.",
     "description_en": "A stylish green scarf.",
     "imageUrls": ["/CharlinaEstampada/17.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -166,7 +166,7 @@
     "description": "Una elegante bufanda marrón claro con patrones intrincados.",
     "description_en": "A stylish light brown scarf with intricate patterns.",
     "imageUrls": ["/CharlinaEstampada/18.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   },
   {
@@ -176,7 +176,7 @@
     "description": "Una elegante bufanda azul con patrones marrón claro.",
     "description_en": "A stylish blue scarf with light brown patterns.",
     "imageUrls": ["/CharlinaEstampada/19.JPG"],
-    "price": 25000,
+    "price": 37000,
     "purchased": false
   }
 ]

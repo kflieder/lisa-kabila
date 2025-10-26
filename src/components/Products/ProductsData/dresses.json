@@ -1,0 +1,202 @@
+[
+  {
+    "id": "dress1",
+    "name": "Vestido Morado",
+    "name_en": "Purple Dress",
+    "description": "Un hermoso vestido morado con patrones geométricos.",
+    "description_en": "A beautiful purple dress with geometric patterns.",
+    "imageUrls": ["/dresses/1.JPG", "/dresses/29.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress2",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un vibrante vestido rosa con un diseño elegante.",
+    "description_en": "A vibrant pink dress with a sleek design.",
+    "imageUrls": ["/dresses/2.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress3",
+    "name": "Vestido Blanco",
+    "name_en": "White Dress",
+    "description": "Un hermoso vestido blanco con detalles florales.",
+    "description_en": "A beautiful white dress with floral details.",
+    "imageUrls": ["/dresses/3.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress4",
+    "name": "Vestido Azul Claro",
+    "name_en": "Light Blue Dress",
+    "description": "Un elegante vestido azul claro con detalles florales.",
+    "description_en": "A stylish light blue dress with floral details.",
+    "imageUrls": ["/dresses/4.JPG", "/dresses/31.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress5",
+    "name": "Vestido Blanco",
+    "name_en": "White Dress",
+    "description": "Un hermoso vestido blanco con patrones geométricos.",
+    "description_en": "A beautiful white dress with geometric patterns.",
+    "imageUrls": ["/dresses/5.JPG", "/dresses/6.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress6",
+    "name": "Vestido Negro",
+    "name_en": "Black Dress",
+    "description": "Un elegante vestido negro con patron colorido.",
+    "description_en": "A stylish black dress with colorful pattern.",
+    "imageUrls": ["/dresses/7.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress7",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un encantador vestido rosa.",
+    "description_en": "A lovely pink dress.",
+    "imageUrls": ["/dresses/8.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress8",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un encantador vestido rosa.",
+    "description_en": "A lovely pink dress.",
+    "imageUrls": ["/dresses/9.JPG", "/dresses/33.jpg", "/dresses/25.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress9",
+    "name": "Vestido Marrón",
+    "name_en": "Brown Dress",
+    "description": "Un elegante vestido marrón con detalles sutiles.",
+    "description_en": "A stylish brown dress with subtle details.",
+    "imageUrls": ["/dresses/10.JPG", "/dresses/11.JPG","/dresses/26.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress10",
+    "name": "Vestido Negro",
+    "name_en": "Black Dress",
+    "description": "Un elegante vestido negro con detalles en blanco y gris.",
+    "description_en": "A stylish black dress with white and gray patterns.",
+    "imageUrls": ["/dresses/12.JPG", "/dresses/13.JPG","/dresses/28.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress11",
+    "name": "Vestido Negro",
+    "name_en": "Black Dress",
+    "description": "Un elegante vestido negro con detalles coloridos.",
+    "description_en": "A stylish black dress with colorful patterns.",
+    "imageUrls": ["/dresses/14.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress12",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un elegante vestido rosa.",
+    "description_en": "A stylish pink dress.",
+    "imageUrls": ["/dresses/15.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress13",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un elegante vestido rosa.",
+    "description_en": "A stylish pink dress.",
+    "imageUrls": ["/dresses/16.JPG", "/dresses/27.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress14",
+    "name": "Vestido Rosa",
+    "name_en": "Pink Dress",
+    "description": "Un elegante vestido rosa.",
+    "description_en": "A stylish pink dress.",
+    "imageUrls": ["/dresses/17.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress15",
+    "name": "Vestido Morado",
+    "name_en": "Purple Dress",
+    "description": "Un elegante vestido morado.",
+    "description_en": "A stylish purple dress.",
+    "imageUrls": ["/dresses/18.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress16",
+    "name": "Vestido Morado",
+    "name_en": "Purple Dress",
+    "description": "Un elegante vestido morado.",
+    "description_en": "A stylish purple dress.",
+    "imageUrls": ["/dresses/21.JPG", "/dresses/19.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress17",
+    "name": "Vestido Morado",
+    "name_en": "Purple Dress",
+    "description": "Un elegante vestido morado.",
+    "description_en": "A stylish purple dress.",
+    "imageUrls": ["/dresses/23.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress18",
+    "name": "Vestido Negro",
+    "name_en": "Black Dress",
+    "description": "Un elegante vestido negro.",
+    "description_en": "A stylish black dress.",
+    "imageUrls": ["/dresses/24.JPG"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress19",
+    "name": "Vestido Azul",
+    "name_en": "Blue Dress",
+    "description": "Un elegante vestido azul.",
+    "description_en": "A stylish blue dress.",
+    "imageUrls": ["/dresses/36.JPG", "/dresses/32.jpg"],
+    "price": 30000,
+    "purchased": false
+  },
+  {
+    "id": "dress20",
+    "name": "Vestido Blanco",
+    "name_en": "White Dress",
+    "description": "Un elegante vestido blanco.",
+    "description_en": "A stylish white dress.",
+    "imageUrls": ["/dresses/35.JPG"],
+    "price": 30000,
+    "purchased": false
+  }
+]

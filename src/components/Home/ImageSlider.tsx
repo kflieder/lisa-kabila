@@ -21,14 +21,20 @@ function ImageSlider({
           ];
 
           const bgColors = [
-            "bg-gradient-to-r from-rose-200/50 via-amber-200/40 to-yellow-100/50",
+            "bg-gradient-to-r from-rose-200/50 via-amber-200/20 to-yellow-100/20",
             "bg-gradient-to-r from-orange-200/50 via-red-200/40 to-rose-100/50",
             "bg-gradient-to-r from-lime-200/50 via-amber-100/40 to-orange-100/50",
             "bg-gradient-to-r from-indigo-200/50 via-purple-200/40 to-pink-100/50",
           ];
 
           const textAnimations = ["bounceUp", "bounceDown", "shake", "swing", "bounceUp"];
-          const textClasses = ["text-rose-500", "text-orange-500", "text-lime-500", "text-indigo-500", "text-rose-500"];
+          const textClasses = [
+            "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-fuchsia-600 to-pink-600 font-extrabold tracking-tight drop-shadow-lg",
+            "bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600 font-extrabold tracking-tight drop-shadow-lg text-2xl",
+            "bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-lime-600 to-teal-600 font-extrabold tracking-tight drop-shadow-lg",
+            "bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 font-extrabold tracking-tight drop-shadow-lg",
+            "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-amber-600 to-yellow-600 font-extrabold tracking-tight drop-shadow-lg",
+          ];
 
 
           const textForSlides = [
@@ -82,7 +88,7 @@ function ImageSlider({
                       key={i}
                       className={`transition-opacity duration-700 ease-in-out w-full ${
                         bgColors[i % bgColors.length]
-                      } flex justify-center items-center ${
+                      } flex sm:flex-row flex-col justify-center items-center ${
                         isActive
                           ? "relative opacity-100"
                           : "absolute inset-0 opacity-0 pointer-events-none"
@@ -91,7 +97,7 @@ function ImageSlider({
                     
                         <div
                           key={index}
-                          className={`w-full justify-center items-center text-center text-7xl p-6 ${
+                          className={`w-full justify-center items-center text-center sm:text-7xl p-6 ${
                             textAnimations[i % textAnimations.length]
                           } ${textClasses[i % textClasses.length]}`}
                         >
@@ -151,7 +157,7 @@ function ImageSlider({
                 </svg>
               </button>
 
-              <div className="absolute bottom-12 left-0 right-0 flex justify-center gap-2">
+              <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2">
                 {images.map((_, i) => (
                   <button
                     key={i}
@@ -159,8 +165,8 @@ function ImageSlider({
                     aria-label={`Go to slide ${i + 1}`}
                     className={`h-2.5 w-2.5 rounded-full transition cursor-pointer ${
                       i === index
-                        ? "bg-white shadow ring-2 ring-white/60"
-                        : "bg-white/50 hover:bg-white/80"
+                        ? "bg-white shadow ring-2 ring-white/60 border border-gray-400"
+                        : "bg-white/50 hover:bg-white/80 border border-gray-300"
                     }`}
                   />
                 ))}
@@ -171,14 +177,14 @@ function ImageSlider({
 
         return <Slider />;
       })()}
-      <div className="absolute z-49 bottom-1 translate-x-[-50%] left-1/2 flex justify-center gap-2 w-30">
+      {/* <div className="absolute z-49 bottom-1 translate-x-[-50%] left-1/2 flex justify-center gap-2 w-30">
         <p
           onClick={() => setActiveTabFromImageSlider?.("products")}
-          className="cursor-pointer inline-flex items-center gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm font-medium text-amber-700 hover:bg-amber-100 hover:border-amber-300 transition"
+          className="cursor-pointer inline-flex items-center gap-2 rounded-2xl border border-amber-700 bg-amber-50 px-3 py-2 text-sm font-medium text-amber-700 hover:shadow-lg transition"
         >
           {t("viewProducts", lang)}
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

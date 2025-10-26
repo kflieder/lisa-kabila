@@ -52,7 +52,7 @@ function Cart() {
   return (
     <>
       {cart.length === 0 ? (
-        <div className="absolute z-50 top-10 right-0 w-[80vw] sm:w-[30vw] bg-white rounded-xl border border-gray-200 shadow-xl p-6">
+        <div className="absolute z-50 top-15 right-0 w-[80vw] sm:w-[30vw] bg-white rounded-xl border border-gray-200 shadow-xl p-6">
           <div className="flex flex-col items-center text-center gap-3">
             <div className="rounded-full bg-gray-100 p-3 ring-1 ring-gray-200">
               <svg
@@ -90,7 +90,7 @@ function Cart() {
           </div>
         </div>
       ) : (
-        <div className="absolute z-50 top-20 right-0 w-[80vw] sm:w-[50vw] h-auto flex flex-col items-center justify-center bg-white rounded-lg border border-gray-600 shadow-lg">
+        <div className="absolute z-50 top-15 right-0 w-[80vw] sm:w-[50vw] h-auto flex flex-col items-center justify-center bg-white rounded-lg border border-gray-600 shadow-lg">
           <ul className="w-full flex flex-col no-scrollbar gap-4 p-4 max-h-[60vh] overflow-auto">
             {cart.map((item) => (
               <ProductCard key={item.id} product={item} styleSelector="cart" />

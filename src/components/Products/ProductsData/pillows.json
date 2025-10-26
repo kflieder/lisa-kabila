@@ -6,7 +6,7 @@
     "description": "Una hermosa pequeña almohada blanca con símbolos tribales.",
     "description_en": "A beautiful small white pillow with tribal symbols.",
     "imageUrls": ["/Pillows/1.JPG"],
-    "price": 25000,
+    "price": 35000,
     "purchased": false
   },
   {
@@ -16,7 +16,7 @@
     "description": "Una vibrante almohada azul claro con un diseño de rama.",
     "description_en": "A vibrant light blue pillow with a branch design.",
     "imageUrls": ["/Pillows/2.JPG"],
-    "price": 25000,
+    "price": 35000,
     "purchased": false
   },
   {
@@ -26,7 +26,7 @@
     "description": "Una hermosa almohada naranja y azul con patrones geométricos.",
     "description_en": "A beautiful orange and blue pillow with geometric patterns.",
     "imageUrls": ["/Pillows/3.JPG"],
-    "price": 25000,
+    "price": 35000,
     "purchased": false
   }
 ]

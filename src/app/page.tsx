@@ -7,12 +7,13 @@ import React, { useState } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'home' | 'products'>('home');
- 
+  const [activeCategoryFromProductsPage, setActiveCategoryFromProductsPage] = useState<number | null>(null);
+  const [idsOfRenderedCategories, setIdsOfRenderedCategories] = useState<number[]>([]);
  
 
   return (
     <div className="">
-      <Header activeTabFromHome={activeTab} setActiveTabFromHeader={setActiveTab} />
+      <Header activeTabFromHome={activeTab} setActiveTabFromHeader={setActiveTab} activeCategoryFromProductsPage={activeCategoryFromProductsPage} idsOfRenderedCategories={idsOfRenderedCategories} />
       <div className="">
       {
         activeTab === 'home' && (
@@ -21,7 +22,7 @@ export default function Home() {
       }
       {
         activeTab === 'products' && (
-          <ProductsPage />
+          <ProductsPage setActiveCategoryFromProductsPage={setActiveCategoryFromProductsPage} setIdsOfRenderedCategories={setIdsOfRenderedCategories} />
         )
       }
       </div>

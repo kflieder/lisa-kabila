@@ -6,7 +6,7 @@
     "description": "Un hermoso monedero multicolor.",
     "description_en": "A beautiful multicolor change purse.",
     "imageUrls": ["/SmallBags/1.JPG"],
-    "price": 25000,
+    "price": 18000,
     "purchased": false
   },
   {
@@ -16,7 +16,7 @@
     "description": "Un vibrante monedero azul oscuro con un patrón multicolor.",
     "description_en": "A vibrant dark blue change purse with a multicolor pattern.",
     "imageUrls": ["/SmallBags/2.JPG"],
-    "price": 25000,
+    "price": 18000,
     "purchased": false
   },
   {
@@ -26,7 +26,7 @@
     "description": "Un hermoso monedero azul oscuro con un patrón rosa.",
     "description_en": "A beautiful dark blue change purse with a pink pattern.",
     "imageUrls": ["/SmallBags/3.JPG", "/SmallBags/4.JPG"],
-    "price": 25000,
+    "price": 18000,
     "purchased": false
   },
   {
@@ -36,7 +36,7 @@
     "description": "Un estilizado monedero con patrón rojo y blanco.",
     "description_en": "A stylish red and white patterned change purse.",
     "imageUrls": ["/SmallBags/5.JPG"],
-    "price": 25000,
+    "price": 18000,
     "purchased": false
   },
   {
@@ -46,7 +46,7 @@
     "description": "Un hermoso monedero amarillo oscuro con un patrón blanco.",
     "description_en": "A beautiful dark yellow change purse with a white pattern.",
     "imageUrls": ["/SmallBags/6.JPG"],
-    "price": 25000,
+    "price": 18000,
     "purchased": false
   }
 ]
