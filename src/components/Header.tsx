@@ -313,6 +313,11 @@ function Header({
           )}
         </div>
       )}
+      {
+        isFixed && (
+          <div className="h-10"></div>
+        )
+      }
 
       {showCart && !isFixed && (
         <div ref={cartRef}>
