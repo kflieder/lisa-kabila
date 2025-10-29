@@ -1,0 +1,122 @@
+[
+  {
+    "id": "earring1",
+    "name": "Aretes Wiricuta",
+    "name_en": "Wiricuta Earrings",
+    "description": "Aretes hechos a mano con diseño Wiricuta.",
+    "description_en": "Handmade earrings with Wiricuta design.",
+    "imageUrls": ["/Earrings/1.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "earring2",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/2.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+ {
+    "id": "earring3",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/3.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+  {
+    "id": "earring4",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/4.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring5",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/5.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring6",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/6.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring7",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/7.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring8",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/8.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring9",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/9.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring10",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/10.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring11",
+    "name": "Aretes estilo pon pon",
+    "name_en": "Pom Pom Style Earrings",
+    "description": "Material: Hilo hecho a mano, Origen: Chiapas, México.",
+    "description_en": "A vibrant light blue pillow with a branch design.",
+    "imageUrls": ["/Earrings/11.jpeg"],
+    "price": 25000,
+    "purchased": false
+  },
+   {
+    "id": "earring12",
+    "name": "Aretes estilo tribal",
+    "name_en": "Tribal Style Earrings",
+    "description": "Color: rojo mate; Material: chaquira",
+    "description_en": "Color: matte red; Material: chaquira",
+    "imageUrls": ["/Earrings/3.jpeg"],
+    "price": 25000,
+    "purchased": false
+  }
+]

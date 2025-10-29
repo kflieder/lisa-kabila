@@ -27,7 +27,21 @@ function ImageSlider({
             "bg-gradient-to-r from-indigo-200/50 via-purple-200/40 to-pink-100/50",
           ];
 
-          const textAnimations = ["bounceUp", "bounceDown", "shake", "swing", "bounceUp"];
+          const bgImages = [
+            "/home/multidress1.jpg",
+            "/home/yellowbg.jpg",
+            "/home/multidress2.jpg",
+            "/home/yellowbg.jpg",
+            "/home/yellowbg.jpg",
+          ];
+
+          const textAnimations = [
+            "bounceUp",
+            "bounceDown",
+            "shake",
+            "swing",
+            "bounceUp",
+          ];
           const textClasses = [
             "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-fuchsia-600 to-pink-600 font-extrabold tracking-tight drop-shadow-lg",
             "bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600 font-extrabold tracking-tight drop-shadow-lg text-2xl",
@@ -35,7 +49,6 @@ function ImageSlider({
             "bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 font-extrabold tracking-tight drop-shadow-lg",
             "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-amber-600 to-yellow-600 font-extrabold tracking-tight drop-shadow-lg",
           ];
-
 
           const textForSlides = [
             t("sliderPhrase1", lang),
@@ -86,29 +99,42 @@ function ImageSlider({
                   return (
                     <div
                       key={i}
-                      className={`transition-opacity duration-700 ease-in-out w-full ${
+                      className={`transition-opacity duration-700 ease-in-out w-full  flex sm:flex-row flex-col justify-center items-center ${
                         bgColors[i % bgColors.length]
-                      } flex sm:flex-row flex-col justify-center items-center ${
+                      } ${
                         isActive
                           ? "relative opacity-100"
                           : "absolute inset-0 opacity-0 pointer-events-none"
                       }`}
                     >
-                    
-                        <div
-                          key={index}
-                          className={`w-full justify-center items-center text-center sm:text-7xl p-6 ${
-                            textAnimations[i % textAnimations.length]
-                          } ${textClasses[i % textClasses.length]}`}
-                        >
-                          {textForSlides[i]}
-                        </div>
-                    
+                      {/* <img
+                        src={bgImages[i % bgImages.length]}
+                        alt={`Background ${i + 1}`}
+                        className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+                        draggable={false}
+                        style={{ zIndex: 0 }}
+                      /> */}
+                      <div
+                        className={`${
+                          bgColors[i % bgColors.length]
+                        } absolute inset-0`}
+                        
+                        aria-hidden
+                      />
+
+                      <div
+                        key={index}
+                        className={`w-full justify-center items-center text-center sm:text-7xl p-6 ${
+                          textAnimations[i % textAnimations.length]
+                        } ${textClasses[i % textClasses.length]}`}
+                      >
+                        {textForSlides[i]}
+                      </div>
 
                       <img
                         src={src}
                         alt={`Slide ${i + 1}`}
-                        className="block w-auto max-h-[80vh] object-contain select-none"
+                        className="block w-auto max-h-[80vh] object-contain select-none relative z-10"
                         draggable={false}
                       />
                     </div>
@@ -119,7 +145,7 @@ function ImageSlider({
               <button
                 onClick={prev}
                 aria-label="Previous"
-                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
+                className="absolute z-40 left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +165,7 @@ function ImageSlider({
               <button
                 onClick={next}
                 aria-label="Next"
-                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
+                className="z-40 absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white text-gray-900 shadow p-2 backdrop-blur sm:opacity-0 group-hover:opacity-100 transition cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

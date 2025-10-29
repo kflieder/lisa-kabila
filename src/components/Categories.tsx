@@ -31,7 +31,7 @@ function Categories({ activeTabToCategories, setActiveTabFromCategories, activeC
         { id: 1, name: t("bags", lang) },
         { id: 2, name: t("coin_purses", lang) },
         { id: 3, name: t("scarves", lang) },
-        // { id: 4, name: t("jewelry", lang) },
+        { id: 4, name: t("jewelry", lang) },
         { id: 5, name: t("pillows", lang) },
         { id: 6, name: t("dresses", lang) },
     ];

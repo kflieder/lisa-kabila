@@ -48,5 +48,55 @@
     "imageUrls": ["/SmallBags/6.JPG"],
     "price": 18000,
     "purchased": false
+  },
+  {
+    "id": "smallbag6",
+    "name": "Bolsa negra estilo clutch",
+    "name_en": "Black Clutch Bag",
+    "description": "Tela: mezcla de nylon y algodón bordada a mano. Origen: Querétaro.",
+    "description_en": "Fabric: hand-embroidered nylon and cotton blend. Origin: Querétaro.",
+    "imageUrls": ["/SmallBags/7.jpeg", "/SmallBags/8.jpeg"],
+    "price": 45000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag7",
+    "name": "Bolsa negra estilo clutch",
+    "name_en": "Black Clutch Bag",
+    "description": "Tela: mezcla de nylon y algodón bordada a mano. Origen: Querétaro.",
+    "description_en": "Fabric: hand-embroidered nylon and cotton blend. Origin: Querétaro.",
+    "imageUrls": ["/SmallBags/9.jpeg"],
+    "price": 45000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag8",
+    "name": "Bolsa negra estilo clutch",
+    "name_en": "Black Clutch Bag",
+    "description": "Tela: mezcla de nylon y algodón bordada a mano. Origen: Querétaro.",
+    "description_en": "Fabric: hand-embroidered nylon and cotton blend. Origin: Querétaro.",
+    "imageUrls": ["/SmallBags/10.jpeg"],
+    "price": 45000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag9",
+    "name": "Bolsa negra estilo clutch",
+    "name_en": "Black Clutch Bag",
+    "description": "Tela: mezcla de nylon y algodón bordada a mano. Origen: Querétaro.",
+    "description_en": "Fabric: hand-embroidered nylon and cotton blend. Origin: Querétaro.",
+    "imageUrls": ["/SmallBags/11.jpeg"],
+    "price": 45000,
+    "purchased": false
+  },
+  {
+    "id": "smallbag10",
+    "name": "Bolsa negra estilo clutch",
+    "name_en": "Black Clutch Bag",
+    "description": "Tela: mezcla de nylon y algodón bordada a mano. Origen: Querétaro.",
+    "description_en": "Fabric: hand-embroidered nylon and cotton blend. Origin: Querétaro.",
+    "imageUrls": ["/SmallBags/12.jpeg", "/SmallBags/13.jpeg"],
+    "price": 45000,
+    "purchased": false
   }
 ]

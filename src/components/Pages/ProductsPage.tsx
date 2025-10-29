@@ -4,9 +4,12 @@ import CharlinaEstampada from '../Products/CharlinaEstampada'
 import SmallBags from '../Products/SmallBags'
 import Pillows from '../Products/Pillows'
 import Dresses from '../Products/Dresses'
+import Earrings from '../Products/Earrings'
+import { useLanguage } from '@/context/LanguageContext';
+import EarringsBracelet from '../Products/EarringsBracelet'
 
 function ProductsPage({setActiveCategoryFromProductsPage, setIdsOfRenderedCategories}: {setActiveCategoryFromProductsPage: (id: number | null) => void, setIdsOfRenderedCategories: (ids: number[]) => void}) {
-
+  const { lang, t } = useLanguage();
   
 
   useEffect(() => {
@@ -37,7 +40,11 @@ function ProductsPage({setActiveCategoryFromProductsPage, setIdsOfRenderedCatego
       <div id='1'><Bags /></div>
       <div id='2'><SmallBags /></div>
       <div id='3'><CharlinaEstampada /></div>
-      {/* <div id='4'>Jewelry here</div> */}
+      <div id='4' className='flex flex-col w-full'>
+        <h1>{t("jewelry", lang)}</h1>
+        <Earrings />
+        <EarringsBracelet />
+        </div>
       <div id='5'><Pillows /></div>
       <div id='6'><Dresses /></div>
     </div>

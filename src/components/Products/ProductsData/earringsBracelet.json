@@ -1,0 +1,62 @@
+[
+  {
+    "id": "earringBracelet1",
+    "name": "Set de Aretes y pulsera estilo tribal",
+    "name_en": "Tribal Style Earrings and Bracelet Set",
+    "description": "Color: blanco mate; Material: chaquira",
+    "description_en": "Color: matte white; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/1.jpeg"],
+    "price": 35000,
+    "purchased": false
+  },
+  {
+    "id": "earringBracelet2",
+    "name": "Set de Aretes y pulsera estilo tribal ",
+    "name_en": "Tribal Style Earrings and Bracelet Set",
+    "description": "Color: café oscuro brillante; Material: chaquira",
+    "description_en": "Color: shiny dark brown; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/2.jpeg"],
+    "price": 37500,
+    "purchased": false
+  },
+  {
+    "id": "earringBracelet3",
+    "name": "Set de Aretes y pulsera estilo tribal",
+    "name_en": "Tribal Style Earrings and Bracelet Set",
+    "description": "Color: dorado brillante; Material: chaquira",
+    "description_en": "Color: shiny gold; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/3.jpeg"],
+    "price": 37500,
+    "purchased": false
+  },
+  {
+    "id": "earringBracelet4",
+    "name": "Set de Aretes y pulsera estilo tribal ramillete",
+    "name_en": "Tribal Style Earrings and Bracelet Set Bouquet",
+    "description": "Color: dorado brillante con café oscurp; Material: chaquira",
+    "description_en": "Color: shiny gold with dark brown; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/4.jpeg"],
+    "price": 37500,
+    "purchased": false
+  },
+  {
+    "id": "earringBracelet5",
+    "name": "Set de Aretes y pulsera estilo tribal",
+    "name_en": "Tribal Style Earrings and Bracelet Set",
+    "description": "Color: azúl rey con morado brillante; Material: chaquira",
+    "description_en": "Color: royal blue with shiny purple; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/5.jpeg"],
+    "price": 37500,
+    "purchased": false
+  },
+  {
+    "id": "earringBracelet6",
+    "name": "Set de Aretes y pulsera estilo tribal",
+    "name_en": "Tribal Style Earrings and Bracelet Set",
+    "description": "Color: blanco mate; Material: chaquira",
+    "description_en": "Color: matte white; Material: chaquira",
+    "imageUrls": ["/EarringBracelet/6.jpeg"],
+    "price": 37500,
+    "purchased": false
+  }
+]
