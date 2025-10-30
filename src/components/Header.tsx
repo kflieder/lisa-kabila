@@ -207,77 +207,89 @@ function Header({
         >
           <div className="max-w-[100%] mx-auto sm:hidden flex flex-col w-full">
             <nav className="flex items-center w-full sm:flex-col justify-center gap-2">
-            <div className="flex items-center gap-3 md:gap-6 order-2">
-              <p
-                className={`font-medium transition-colors cursor-pointer ${
-                  activeTabFromHome === "home"
-                    ? "text-amber-900 border-b-2 border-amber-600"
-                    : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
-                }`}
-                onClick={() => handleTabClick("home")}
-              >
-                {t("home", lang)}
-              </p>
-              <p
-                className={`font-medium transition-colors cursor-pointer ${
-                  activeTabFromHome === "products"
-                    ? "text-amber-900 border-b-2 border-amber-600"
-                    : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
-                }`}
-                onClick={() => handleTabClick("products")}
-              >
-                {t("products", lang)}
-              </p>
-              <button
-                onClick={toggleLanguage}
-                className="px-2 border border-stone-700 rounded-md text-xs font-medium text-stone-700 hover:bg-stone-700 hover:text-white transition cursor-pointer"
-              >
-                {lang === "en" ? "Español" : "English"}
-              </button>
-              <p
-                ref={cartIconRef}
-                className={`pb-1 font-medium transition-colors inline-flex items-center gap-2 cursor-pointer ${
-                  showCart
-                    ? "text-amber-900 border-b-2 border-amber-600"
-                    : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
-                }`}
-                onClick={() => {
-                  handleCartClick();
-                }}
-              >
-                <svg
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
+             
+              <div className="flex items-center gap-3 md:gap-6 order-2">
+                <p
+                  className={`font-medium transition-colors cursor-pointer ${
+                    activeTabFromHome === "home"
+                      ? "text-amber-900 border-b-2 border-amber-600"
+                      : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
+                  }`}
+                  onClick={() => handleTabClick("home")}
                 >
-                  <circle cx="9" cy="20" r="1" />
-                  <circle cx="17" cy="20" r="1" />
-                  <path d="M3 4h2l2.4 10.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6L21 8H7" />
-                </svg>
-                <span className="sr-only">Cart</span>
-              </p>
-            </div>
-          </nav>
+                  {t("home", lang)}
+                </p>
+                <p
+                  className={`font-medium transition-colors cursor-pointer ${
+                    activeTabFromHome === "products"
+                      ? "text-amber-900 border-b-2 border-amber-600"
+                      : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
+                  }`}
+                  onClick={() => handleTabClick("products")}
+                >
+                  {t("products", lang)}
+                </p>
+                <button
+                  onClick={toggleLanguage}
+                  className="px-2 border border-stone-700 rounded-md text-xs font-medium text-stone-700 hover:bg-stone-700 hover:text-white transition cursor-pointer"
+                >
+                  {lang === "en" ? "Español" : "English"}
+                </button>
+                <p
+                  ref={cartIconRef}
+                  className={`pb-1 font-medium transition-colors inline-flex items-center gap-2 cursor-pointer ${
+                    showCart
+                      ? "text-amber-900 border-b-2 border-amber-600"
+                      : "text-stone-700 border-b-2 border-transparent hover:text-amber-800 hover:border-amber-400"
+                  }`}
+                  onClick={() => {
+                    handleCartClick();
+                  }}
+                >
+                  <svg
+                    className="h-6 w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="9" cy="20" r="1" />
+                    <circle cx="17" cy="20" r="1" />
+                    <path d="M3 4h2l2.4 10.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6L21 8H7" />
+                  </svg>
+                  <span className="sr-only">Cart</span>
+                </p>
+              </div>
+            </nav>
             <Categories
               activeTabToCategories={activeTabFromHome}
               setActiveTabFromCategories={setActiveTabFromHeader}
               activeCategoryFromProductsPage={activeCategoryFromProductsPage}
               idsOfRenderedCategories={idsOfRenderedCategories}
             />
-            
           </div>
-          <div className="max-w-[100%] mx-auto hidden sm:flex flex-col w-full pl-50">
-          <Categories
+          <div className="flex w-full justify-between items-center">
+             <a
+                href="/"
+                className="flex items-center gap-3 border border-gray-300 rounded-full shrink-0"
+              >
+                <img
+                  className="h-16 w-16 rounded-full"
+                  src="/logo.jpg"
+                  alt="Logo"
+                />
+              </a>
+          <div className="mx-auto hidden sm:flex flex-col w-full pl-25">
+            <Categories
               activeTabToCategories={activeTabFromHome}
               setActiveTabFromCategories={setActiveTabFromHeader}
               activeCategoryFromProductsPage={activeCategoryFromProductsPage}
               idsOfRenderedCategories={idsOfRenderedCategories}
             />
+          </div>
           </div>
           <p
             ref={cartIconRef}
@@ -313,11 +325,7 @@ function Header({
           )}
         </div>
       )}
-      {
-        isFixed && (
-          <div className="h-10 sm:hidden block"></div>
-        )
-      }
+      {isFixed && <div className="h-10 sm:hidden block"></div>}
 
       {showCart && !isFixed && (
         <div ref={cartRef}>

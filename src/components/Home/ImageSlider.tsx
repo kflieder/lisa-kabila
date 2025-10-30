@@ -107,13 +107,13 @@ function ImageSlider({
                           : "absolute inset-0 opacity-0 pointer-events-none"
                       }`}
                     >
-                      {/* <img
+                      <img
                         src={bgImages[i % bgImages.length]}
                         alt={`Background ${i + 1}`}
                         className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
                         draggable={false}
                         style={{ zIndex: 0 }}
-                      /> */}
+                      />
                       <div
                         className={`${
                           bgColors[i % bgColors.length]
@@ -121,16 +121,16 @@ function ImageSlider({
                         
                         aria-hidden
                       />
-
+                    <div className='bg-gray-950/20 backdrop-blur-md rounded-lg p-4 m-4 sm:m-10 z-20'>
                       <div
                         key={index}
-                        className={`w-full justify-center items-center text-center sm:text-7xl p-6 ${
+                        className={` w-full justify-center items-center text-center sm:text-7xl p-6 ${
                           textAnimations[i % textAnimations.length]
                         } ${textClasses[i % textClasses.length]}`}
                       >
                         {textForSlides[i]}
                       </div>
-
+                    </div>
                       <img
                         src={src}
                         alt={`Slide ${i + 1}`}
