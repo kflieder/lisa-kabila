@@ -47,7 +47,7 @@ function SmallBags() {
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
 
-      <h1 className="text-3xl font-semibold text-gray-900 mb-6">Small Bags</h1>
+      <h1 className="font-semibold text-gray-900 mb-6">{t("small_bags", lang)}</h1>
 
       <div className="relative">
         <ul

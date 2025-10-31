@@ -32,7 +32,7 @@ function ProductCard({
       }`}
     >
       <div className={`bg-white rounded-xl shadow ring-1 ring-gray-100 hover:shadow-md transition-shadow h-full flex flex-col justify-between ${styleSelector === "cart" ? "w-1/2" : ""}`}>
-        <div className="aspect-[4/5] w-full overflow-hidden rounded-t-xl bg-gray-100">
+        <div className="aspect-[5/5] sm:aspect-[4/5] w-full overflow-hidden rounded-t-xl bg-gray-100">
           {product.imageUrls.length > 1 ? (
             <div className="relative h-full w-full">
               <div

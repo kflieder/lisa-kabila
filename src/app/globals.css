@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
+
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -19,6 +22,16 @@
     --foreground: #171717;
   }
 }
+
+@layer base {
+  h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+}
+
 
 body {
   background: rgba(255, 248, 242, 0.6);

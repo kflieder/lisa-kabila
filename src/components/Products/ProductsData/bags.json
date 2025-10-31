@@ -98,5 +98,15 @@
     "imageUrls": ["/Bags/12.JPG"],
     "price": 38000,
     "purchased": false
-  }
+  },
+  {
+    "id": "bag11",
+    "name": "Bolso Azul Claro",
+    "name_en": "Light Blue Bag",
+    "description": "Un elegante bolso azul claro.",
+    "description_en": "A beautiful light blue bag.",
+    "imageUrls":["/Bags/13.jpg"],
+    "price": 38000,
+    "purchased": false
+ }
 ]

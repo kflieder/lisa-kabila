@@ -41,7 +41,7 @@ function ProductsPage({setActiveCategoryFromProductsPage, setIdsOfRenderedCatego
       <div id='2'><SmallBags /></div>
       <div id='3'><CharlinaEstampada /></div>
       <div id='4' className='flex flex-col w-full'>
-        <h1>{t("jewelry", lang)}</h1>
+        <h1 className='ml-3'>{t("jewelry", lang)}</h1>
         <Earrings />
         <EarringsBracelet />
         </div>

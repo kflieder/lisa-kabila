@@ -14,14 +14,20 @@ function Categories({ activeTabToCategories, setActiveTabFromCategories, activeC
             setTimeout(() => {
                 const element = document.getElementById(id.toString());
                 if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const yOffset = -80;
+                    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                   
                 }
             }, 50);
         } else {
             setActiveCategory(id);
             const element = document.getElementById(id.toString());
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const yOffset = -80;
+                const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+               
             }
         }
     }
@@ -55,7 +61,7 @@ console.log('Rendered Categories IDs:', idsOfRenderedCategories);
     <>
         <ul className='flex items-center justify-center sm:justify-start sm:gap-6 sm:text-base text-sm flex-wrap mr-4'>
             {categories.map((category) => (
-                <li key={category.id} onClick={() => handleCategoryClick(category.id)} className={`whitespace-nowrap cursor-pointer text-stone-700 hover:text-amber-800 font-medium p-2 ${(activeCategory ?? activeCategoryFromProductsPage) === category.id ? "border-b-2 border-amber-600" : "border-b-2 border-transparent"}`}>
+                <li key={category.id} onClick={() => handleCategoryClick(category.id)} className={`whitespace-nowrap cursor-pointer text-stone-700 hover:text-amber-800 font-medium p-1 ${(activeCategory ?? activeCategoryFromProductsPage) === category.id ? "border-b-2 border-amber-600" : "border-b-2 border-transparent"}`}>
                     {category.name}
                 </li>
             ))}

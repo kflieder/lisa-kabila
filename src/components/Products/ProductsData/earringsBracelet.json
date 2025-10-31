@@ -48,15 +48,5 @@
     "imageUrls": ["/EarringBracelet/5.jpeg"],
     "price": 37500,
     "purchased": false
-  },
-  {
-    "id": "earringBracelet6",
-    "name": "Set de Aretes y pulsera estilo tribal",
-    "name_en": "Tribal Style Earrings and Bracelet Set",
-    "description": "Color: blanco mate; Material: chaquira",
-    "description_en": "Color: matte white; Material: chaquira",
-    "imageUrls": ["/EarringBracelet/6.jpeg"],
-    "price": 37500,
-    "purchased": false
   }
 ]

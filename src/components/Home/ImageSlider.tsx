@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
 
 function ImageSlider({
   setActiveTabFromImageSlider,
@@ -13,26 +16,29 @@ function ImageSlider({
       {(() => {
         const Slider: React.FC = () => {
           const images: string[] = [
-            "/home/blueDress1.jpg",
-            "/home/blueDress2.jpg",
-            "/home/blueDress3.jpg",
-            "/home/brownwhitedress.jpg",
+            "/home/blueDressNew.jpg",
+            "/home/blueDressNew2.jpg",
+            "/home/changePurse.jpg",
+            "/home/salmondress.jpg",
             "/home/fabric.jpg",
+            "/home/senior.jpg",
           ];
 
           const bgColors = [
-            "bg-gradient-to-r from-rose-200/50 via-amber-200/20 to-yellow-100/20",
-            "bg-gradient-to-r from-orange-200/50 via-red-200/40 to-rose-100/50",
+            "bg-gradient-to-r from-blue-200/50 via-blue-300/20 to-yellow-200/20",
+            "bg-gradient-to-r from-orange-200/50 via-red-200/20 to-yellow-100/50",
+            "bg-gradient-to-r from-orange-500/20 via-yellow-500/20 to-orange-300/20",
             "bg-gradient-to-r from-lime-200/50 via-amber-100/40 to-orange-100/50",
             "bg-gradient-to-r from-indigo-200/50 via-purple-200/40 to-pink-100/50",
           ];
 
           const bgImages = [
-            "/home/multidress1.jpg",
-            "/home/yellowbg.jpg",
-            "/home/multidress2.jpg",
-            "/home/yellowbg.jpg",
-            "/home/yellowbg.jpg",
+            "/home/sunset.jpg",
+            "/home/butterflies.jpg",
+            "/home/sunset.jpg",
+            "/home/butterflies.jpg",
+            "/home/sunset.jpg",
+            "/home/butterflies.jpg",
           ];
 
           const textAnimations = [
@@ -42,13 +48,13 @@ function ImageSlider({
             "swing",
             "bounceUp",
           ];
-          const textClasses = [
-            "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-fuchsia-600 to-pink-600 font-extrabold tracking-tight drop-shadow-lg",
-            "bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600 font-extrabold tracking-tight drop-shadow-lg text-2xl",
-            "bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-lime-600 to-teal-600 font-extrabold tracking-tight drop-shadow-lg",
-            "bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 font-extrabold tracking-tight drop-shadow-lg",
-            "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-amber-600 to-yellow-600 font-extrabold tracking-tight drop-shadow-lg",
-          ];
+          // const textClasses = [
+          //   "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-fuchsia-600 to-pink-600 font-bold tracking-tight drop-shadow-lg",
+          //   "bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600 font-bold tracking-tight drop-shadow-lg text-2xl",
+          //   "bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-lime-600 to-teal-600 font-bold tracking-tight drop-shadow-lg",
+          //   "bg-clip-text text-transparent bg-gradient-to-r from-indigo-900 via-violet-800 to-purple-900 font-bold tracking-tight drop-shadow-lg",
+          //   "bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-amber-600 to-yellow-600 font-bold tracking-tight drop-shadow-lg",
+          // ];
 
           const textForSlides = [
             t("sliderPhrase1", lang),
@@ -56,6 +62,7 @@ function ImageSlider({
             t("sliderPhrase3", lang),
             t("sliderPhrase4", lang),
             t("sliderPhrase5", lang),
+            t("sliderPhrase6", lang),
           ];
 
           const [index, setIndex] = React.useState(0);
@@ -99,9 +106,7 @@ function ImageSlider({
                   return (
                     <div
                       key={i}
-                      className={`transition-opacity duration-700 ease-in-out w-full  flex sm:flex-row flex-col justify-center items-center ${
-                        bgColors[i % bgColors.length]
-                      } ${
+                      className={`transition-opacity duration-700 ease-in-out w-full  flex sm:flex-row p-6 flex-col justify-start items-center ${
                         isActive
                           ? "relative opacity-100"
                           : "absolute inset-0 opacity-0 pointer-events-none"
@@ -110,33 +115,31 @@ function ImageSlider({
                       <img
                         src={bgImages[i % bgImages.length]}
                         alt={`Background ${i + 1}`}
-                        className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+                        className="absolute inset-0 w-full h-full object-cover sm:object-contain pointer-events-none select-none"
                         draggable={false}
                         style={{ zIndex: 0 }}
                       />
                       <div
-                        className={`${
-                          bgColors[i % bgColors.length]
-                        } absolute inset-0`}
-                        
+                        className={`absolute inset-0`}
                         aria-hidden
                       />
-                    <div className='bg-gray-950/20 backdrop-blur-md rounded-lg p-4 m-4 sm:m-10 z-20'>
-                      <div
-                        key={index}
-                        className={` w-full justify-center items-center text-center sm:text-7xl p-6 ${
-                          textAnimations[i % textAnimations.length]
-                        } ${textClasses[i % textClasses.length]}`}
-                      >
-                        {textForSlides[i]}
-                      </div>
-                    </div>
                       <img
                         src={src}
                         alt={`Slide ${i + 1}`}
-                        className="block w-auto max-h-[80vh] object-contain select-none relative z-10"
+                        className="block w-auto max-h-[80vh] object-contain select-none relative z-10 rounded-lg shadow-2xl border-4 border-white/40 m-0 sm:m-10 sm:order-1 order-2"
                         draggable={false}
                       />
+                      <div className="bg-gray-950/40 backdrop-blur-md rounded-lg p-4 m-4 sm:m-10 z-20 sm:order-2 order-1">
+                        <div
+                          key={index}
+                          className={`w-full justify-center items-center text-center sm:text-4xl text-white font-semibold  ${playfair.className} ${
+                            textAnimations[i % textAnimations.length]
+                          } `}
+                        >
+                          {textForSlides[i]}
+                        </div>
+                      </div>
+                      
                     </div>
                   );
                 })}

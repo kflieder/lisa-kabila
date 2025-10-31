@@ -274,7 +274,7 @@ function Header({
           <div className="flex w-full justify-between items-center">
              <a
                 href="/"
-                className="flex items-center gap-3 border border-gray-300 rounded-full shrink-0"
+                className="sm:flex hidden items-center gap-3 border border-gray-300 rounded-full shrink-0"
               >
                 <img
                   className="h-16 w-16 rounded-full"
