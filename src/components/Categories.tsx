@@ -14,7 +14,7 @@ function Categories({ activeTabToCategories, setActiveTabFromCategories, activeC
             setTimeout(() => {
                 const element = document.getElementById(id.toString());
                 if (element) {
-                    const yOffset = -80;
+                    const yOffset = window.innerWidth < 640 ? -40 : -80;
                     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
                     window.scrollTo({ top: y, behavior: 'smooth' });
                    
@@ -24,7 +24,7 @@ function Categories({ activeTabToCategories, setActiveTabFromCategories, activeC
             setActiveCategory(id);
             const element = document.getElementById(id.toString());
             if (element) {
-                const yOffset = -80;
+                const yOffset = window.innerWidth < 640 ? -50 : -80;
                 const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
                 window.scrollTo({ top: y, behavior: 'smooth' });
                
